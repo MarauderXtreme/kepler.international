@@ -1,0 +1,13 @@
+---
+
+main:
+  - title: "titles.pages.index"
+    url: "/"
+  - title: "titles.pages.blog"
+    url: "/blog"
+  - title: "titles.pages.projects"
+    url: "/projects"
+  - title: "titles.pages.reviews"
+    url: "/reviews"
+  - title: "titles.pages.tutorials"
+    url: "/tutorials"

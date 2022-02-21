@@ -1,0 +1,17 @@
+a.external-link {
+	&:after {
+		content: asset_url('external-link.svg');
+		display: inline-flex;
+		width: 0.6em;
+		margin-left: 0.2em;
+	}
+}
+
+.social-links a.external-link {
+	&:after {
+		content: initial;
+		display: initial;
+		height: initial;
+		width: initial;
+	}
+}

@@ -1,0 +1,19 @@
+<!-- Begin include/head -->
+{% assign translatable_title = 'titles.' %}
+{% assign t_title = page.title | split:translatable_title %}
+{% if t_title[0] == blank %}
+	{% assign translatable = true %}
+{% else %}
+	{% assign translatable = false %}
+{% endif %}
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="HandheldFriendly" content="true">
+{% include head/seo.html %}
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | relative_url }}" />
+<link rel="manifest" href="{% asset manifest.json @path %}" />
+<meta name="msapplication-TileColor" content="#00050f" />
+<meta name="theme-color" content="#00050f" />
+{% asset app.css %}
+<!-- End   include/head -->

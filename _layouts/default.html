@@ -1,0 +1,18 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang }}" class="no-js">
+<head>
+	{% include head.html %}
+</head>
+<body>
+	{% include skip-link.html %}
+	{% include header.html %}
+	{% include header-image.html %}
+	{% include breadcrumbs.html %}
+	{{ content }}
+	{% include footer.html %}
+	{% include lateload-scripts.html %}
+</body>
+</html>

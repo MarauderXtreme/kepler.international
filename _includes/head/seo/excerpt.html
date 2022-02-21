@@ -1,0 +1,6 @@
+{% if page.excerpt %}
+<!-- Begin include/head/seo/excerpt -->
+<meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" />
+{% assign metatag_name = metatag_name | push: "description" %}
+<!-- End   include/head/seo/excerpt -->
+{% endif %}

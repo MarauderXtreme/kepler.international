@@ -1,0 +1,95 @@
+---
+
+global:
+  claim: "Kepler - Exploring the Uniweb"
+  you_are_here: "You are here"
+  skip-link: "Skip to content"
+  current: "Current"
+  home: "Home"
+  menu: "Menu"
+  posted_by: "Published by"
+  at: "on"
+  updated: "and last updated on"
+  more: "Read more"
+  pagination: "Paginierung"
+  previous: "Previous"
+  previous_page: "Previous page"
+  next: "Next"
+  next_page: "Next page"
+  page: "Page"
+  useful-links: "Useful links"
+  mistakes: "Found a mistake? Let me know…"
+  do-ref: "My referral link to Digital Ocean"
+  fm-ref: "My referral link to Fastmail"
+  root-cert: "Root Certificate"
+
+titles:
+  pages:
+    index: "Kepler International"
+    about: "About Me"
+    blog: "Logbook"
+    posts: "Posts"
+    projects: "Creations"
+    reviews: "Paper"
+    tutorials: "Formulary"
+    legal: "Legal"
+    imprint: "Imprint"
+    data-protection: "Privacy Policy"
+    disclaimer: "Disclaimer"
+    license: "License"
+    categories: "Categories"
+  tags:
+    administration: "Administration"
+    crazy-things: "Crazy Things"
+    development: "Development"
+    dns: "DNS"
+    drupal: "Drupal"
+    email: "eMail"
+    encryption: "Encryption"
+    everyday-life: "Everyday Life"
+    java: "Java"
+    linux: "Linux"
+    mobile: "Mobile"
+    music: "Music"
+    movies: "Movies"
+    pop-culture: "Pop Culture"
+    programming: "Programming"
+    security: "Security"
+    software: "Software"
+    tv-series: "TV-Series"
+    university: "University"
+    video-games: "Video Games"
+    website: "Website"
+
+metatags:
+  name:
+    description: >-
+      I am Christoph Kepler.
+      On this website I write about things that interest me.
+      You can find my blog, my projects, tutorials and reviews here.
+    abstract: >-
+      Website of Christoph Kepler.
+      On this site is his blog, his projects, tutorials and reviews to find.
+  property:
+    "og:image:alt": >-
+      A stylised telescoped build out of four rectangles.
+      It points into the upper right corner.
+      The lowest rectangle being upright, dark in colour and stick-shaped defines the stand.
+      There is a small dark in colour rectangle pointing in the lower left corner acting as the eye piece.
+      In the middle there is a bright in colour (orange) longer rectangle that symbolises the body.
+      At the end in the upper right there is a dark in colour larger rectangle embodying the lens.
+      Above all stands the site name 'Kepler International'.
+
+months:
+  january: "January"
+  february: "February"
+  march: "March"
+  april: "April"
+  may: "May"
+  june: "June"
+  july: "July"
+  august: "August"
+  september: "September"
+  october: "October"
+  november: "November"
+  december: "December"

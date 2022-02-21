@@ -1,0 +1,15 @@
+name:
+  "twitter:creator": "@MarauderXtreme"
+  "twitter:card": "summary_large_image"
+  "twitter:image": "logo-social.png"
+  "keywords": "Christoph Kepler, Personal Website, Kepler International"
+property:
+  "og:image:type": "image/png"
+  "og:type": "website"
+  "og:site_name": "Kepler International"
+  "og:image": "logo-social.png"
+  "og:image:secure_url": "logo-social.png"
+  "og:email": "website@kepler.international"
+  "fb:admins": "chris.keplerson"
+rel:
+  "image_src": "logo-social.png"

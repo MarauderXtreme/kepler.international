@@ -1,0 +1,28 @@
+{
+  "name": "kepler",
+  "version": "0.0.1",
+  "description": "Kepler International Theme",
+  "dependencies": {
+    "foundation-sites": "^6.7.4",
+    "jquery": "^3.6.0",
+    "what-input": "^5.2.10",
+    "motion-ui": "^2.0.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarauderXtreme/kepler.international.git"
+  },
+  "keywords": [
+    "theme",
+    "website",
+    "jekyll",
+    "ssg"
+  ],
+  "author": "Christoph Kepler <development@kepler.international>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarauderXtreme/kepler.international/issues"
+  },
+  "homepage": "https://github.com/MarauderXtreme/kepler.international#readme"
+}

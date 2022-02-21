@@ -1,0 +1,66 @@
+---
+layout: page
+---
+
+<!-- Begin layout/autopage -->
+{% for post in paginator.posts %}
+<article class="small callout">
+	<header>
+		<h2>
+			<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+		</h2>
+		{% include post-meta-information.html %}
+	</header>
+	{% if post.description %}
+		{% assign desc = post.description %}
+	{% else %}
+		{% assign desc = post.excerpt %}
+	{% endif %}
+	<section>
+		{{ desc | replace: '<h5', '<h6' | replace: '</h5>', '</h6>' | replace: '<h4', '<h5' | replace: '</h4>', '</h5>' | replace: '<h3', '<h4' | replace: '</h3>', '</h4>' | replace: '<h2', '<h3' | replace: '</h2>', '</h3>' | truncate: site.teaser-length, '…' }}
+		<p>
+			<a href="{{ post.url | relative_url }}">{% t global.more %}</a>
+		</p>
+	</section>
+</article>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<nav aria-label="{% t global.pagination %}">
+	<ul class="pagination text-center">
+	{% if paginator.previous_page %}
+		<li class="pagination-previous">
+			<a href="{{ paginator.previous_page_path | relative_url | remove: '.html' }}" aria-label="{% t global.previous_page %}">{% t global.previous %}</a>
+		</li>
+	{% else %}
+		<li class="pagination-previous disabled">
+			{% t global.previous %}
+		</li>
+	{% endif %}
+	{% for page in (1..paginator.total_pages) %}
+		{% if page == paginator.page %}
+			<li class="current">
+				<span class="show-for-sr">{% t global.you_are_here %}</span> {{ paginator.page }}
+			</li>
+		{% elsif page == 1 %}
+			<li>
+				<a href="{{ paginator.first_page_path | relative_url }}">{{ page }}</a>
+			</li>
+		{% else %}
+			<li>
+				<a href="{{ page | prepend: paginator.first_page_path | relative_url }}">{{ page }}</a>
+			</li>
+		{% endif %}
+	{% endfor %}
+	{% if paginator.next_page %}
+		<li class="pagination-next">
+			<a href="{{ paginator.next_page_path | relative_url | remove: '.html' }}" aria-label="{% t global.next_page %}">{% t global.next %}</a>
+		</li>
+	{% else %}
+		<li class="pagination-next disabled">
+			{% t global.next %}
+		</li>
+	{% endif %}
+	</ul>
+</nav>
+{% endif %}
+<!-- End   layout/autopage -->

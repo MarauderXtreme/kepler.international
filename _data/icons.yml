@@ -1,0 +1,35 @@
+---
+
+groups:
+  - type: android-icon
+    sizes:
+      - 36x36
+      - 48x48
+      - 72x72
+      - 96x96
+      - 144x144
+      - 192x192
+  - type: apple-icon
+    rel: apple-touch-icon
+    sizes:
+      - 57x57
+      - 60x60
+      - 72x72
+      - 76x76
+      - 114x114
+      - 120x120
+      - 144x144
+      - 152x152
+      - 180x180
+  - type: favicon
+    sizes:
+      - 16x16
+      - 32x32
+      - 96x96
+  - type: ms-icon
+    rel: msapplication-TileImage
+    sizes:
+      - 70x70
+      - 144x144
+      - 150x150
+      - 310x310

@@ -1,0 +1,33 @@
+<!-- Begin include/head/seo/property -->
+{% assign metatag_property = '' | split: ',' %}
+{% for metatag in page.metatags.property %}
+	{% unless metatag[1] == "" %}
+		{% if metatag[0] == "og:image" or metatag[0] == "og:image:secure_url" %}
+			<meta property="{{ metatag[0] }}" content="{{ site.url }}{% asset '{{ metatag[1] }}' @path %}" />
+		{% else %}
+			<meta property="{{ metatag[0] }}" content="{{ metatag[1] }}" />
+		{% endif %}
+		{% assign metatag_property = metatag_property | push: metatag[0] %}
+	{% endunless %}
+{% endfor %}
+{% for metatag in site.translations[site.lang].metatags.property %}
+	{% unless metatag[1] == "" or metatag_property contains metatag[0] %}
+		{% if metatag[0] == "og:image" or metatag[0] == "og:image:secure_url" %}
+			<meta property="{{ metatag[0] }}" content="{{ site.url }}{% asset '{{ metatag[1] }}' @path %}" />
+		{% else %}
+			<meta property="{{ metatag[0] }}" content="{{ metatag[1] }}" />
+		{% endif %}
+		{% assign metatag_property = metatag_property | push: metatag[0] %}
+	{% endunless %}
+{% endfor %}
+{% for metatag in site.data.metatags.property %}
+	{% unless metatag[1] == "" or metatag_property contains metatag[0] %}
+		{% if metatag[0] == "og:image" or metatag[0] == "og:image:secure_url" %}
+			<meta property="{{ metatag[0] }}" content="{{ site.url }}{% asset '{{ metatag[1] }}' @path%}" />
+		{% else %}
+			<meta property="{{ metatag[0] }}" content="{{ metatag[1] }}" />
+		{% endif %}
+		{% assign metatag_property = metatag_property | push: metatag[0] %}
+	{% endunless %}
+{% endfor %}
+<!-- End   include/head/seo/property -->

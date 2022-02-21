@@ -1,0 +1,21 @@
+<!-- Begin include/head/seo/rel -->
+{% assign metatag_rel = '' | split: ',' %}
+{% for metatag in page.metatags.rel %}
+	{% unless metatag[1] == "" %}
+		<link rel="{{ metatag[0] }}" href="{{ site.url }}{% asset '{{ metatag[1] }}' @path %}" />
+		{% assign metatag_rel = metatag_rel | push: metatag[0] %}
+	{% endunless %}
+{% endfor %}
+{% for metatag in site.translations[site.lang].metatags.rel %}
+	{% unless metatag[1] == "" or metatag_rel contains metatag[0] %}
+		<link rel="{{ metatag[0] }}" href="{{ site.url }}{% asset '{{ metatag[1] }}' @path %}" />
+		{% assign metatag_rel = metatag_rel | push: metatag[0] %}
+	{% endunless %}
+{% endfor %}
+{% for metatag in site.data.metatags.rel %}
+	{% unless metatag[1] == "" or metatag_rel contains metatag[0] %}
+		<link rel="{{ metatag[0] }}" href="{{ site.url }}{% asset '{{ metatag[1] }}' @path %}" />
+		{% assign metatag_rel = metatag_rel | push: metatag[0] %}
+	{% endunless %}
+{% endfor %}
+<!-- End   include/head/seo/rel -->

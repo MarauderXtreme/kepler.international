@@ -1,0 +1,9 @@
+#breadcrumbs {
+	border: 1px solid $kepler-blue-light;
+	border-radius: 3px;
+	padding: 0.5rem 0.8rem;
+}
+
+.breadcrumbs li:not(:last-child)::after {
+	font-family: 'Fira Code', $body-font-family;
+}

@@ -1,0 +1,61 @@
+/**
+ * @file
+ * This file includes every settings change from foundation-sites
+ * Copy over the section what it is from and the tweak the variables
+ */
+
+@import 'util/util';
+
+$kepler-blue: #00050f;
+$kepler-blue-light: scale-color($kepler-blue, $lightness: +5%);
+$kepler-orange: #FF6600;
+
+// 1. Global
+// ---------
+
+$foundation-palette: (
+  primary: $kepler-orange,
+  secondary: $kepler-blue,
+  success: #3adb76,
+  warning: #ffae00,
+  alert: #cc4b37,
+);
+$light-gray: #e6e6e6;
+$medium-gray: #cacaca;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$white: #fefefe;
+$body-background: var(--secondary-colour);
+$body-font-color: var(--white-colour);
+$body-font-family: 'Fira Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+
+// 4. Base Typography
+// ------------------
+
+$font-family-monospace: 'Fira Code', Consolas, 'Liberation Mono', Courier, monospace;
+
+// 10. Breadcrumbs
+// ---------------
+
+$breadcrumbs-item-color: var(--primary-colour);
+$breadcrumbs-item-color-current: var(--white-colour);
+$breadcrumbs-item-color-disabled: var(--medium-gray-colour);
+$breadcrumbs-item-separator-item: '->';
+$breadcrumbs-item-separator-item-rtl: '<-';
+$breadcrumbs-item-separator-color: var(--medium-gray-colour);
+
+// 13. Callout
+// -----------
+
+$callout-background: $kepler-blue;
+$callout-background-fade: 5%;
+$callout-border: 0.2em solid rgba($kepler-orange, 0.25);
+$callout-font-color: $white;
+$callout-font-color-alt: $kepler-blue;
+
+// 55. Top Bar
+// -----------
+
+$topbar-background: $kepler-blue-light;
+$topbar-submenu-background: $kepler-blue-light;
+$topbar-title-spacing: 0;

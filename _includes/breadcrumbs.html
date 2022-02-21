@@ -1,0 +1,59 @@
+<!-- Begin include/breadcrumbs -->
+{% assign translatable_title = 'titles.' %}
+{% assign t_title = page.title | split:translatable_title %}
+{% if t_title[0] == blank %}
+	{% assign translatable = true %}
+{% else %}
+	{% assign translatable = false %}
+{% endif %}
+<div class="breadcrumb-wrapper">
+	<div class="grid-container">
+		<div class="grid-x grid-padding-x">
+			<nav class="cell" aria-label="{% t global.you_are_here %}:" role="navigation">
+				<ul id="breadcrumbs" class="breadcrumbs">
+					{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
+					{% assign frontpage = "/" | relative_url %}
+					{% if frontpage == page.url | relative_url %}
+					<li>
+						<span class="show-for-sr">{% t global.current %}: </span> {% t global.home %}
+					</li>
+					{% else %}
+					<li>
+						<a href="{{ frontpage }}">{% t global.home %}</a>
+					</li>
+					{% endif %}
+					{% assign paged_url = crumbs[-1] | plus: 0 %}
+					{% if paged_url == 0 %}
+						{% assign bc_limit = crumbs.size | minus: 1 %}
+					{% else %}
+						{% assign bc_limit = crumbs.size | minus: 2 %}
+					{% endif %}
+					{% for crumb in crumbs limit: bc_limit offset: 1 %}
+						{% if forloop.last %}
+						<li>
+							<span class="show-for-sr">{% t global.current %}: </span> {% if translatable %}{% t page.title %}{% else %}{{ page.title }}{% endif %}
+						</li>
+						{% else %}
+						<li>
+							{% if site.translations[site.lang].titles.pages contains crumb %}
+								{% assign title_type = "pages" %}
+							{% elsif site.translations[site.lang].titles.tags contains crumb %}
+								{% assign title_type = "tags" %}
+							{% endif %}
+							<a href="{{ site.baseurl }}{% assign crumb_limit = forloop.index %}{% for crumb in crumbs limit: crumb_limit offset: 1 %}{{ crumb | prepend: "/" }}{% endfor %}">
+								{% if title_type %}
+									{% t titles.{{ title_type }}.{{ crumb }} %}
+								{% else %}
+									{{ crumb }}
+								{% endif %}
+							</a>
+							{% comment %}{{ crumb | replace:'-',' ' | remove:'.html' | capitalize }}{% endcomment %}
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<!-- End   include/breadcrumbs -->

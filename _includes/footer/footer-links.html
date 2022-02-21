@@ -1,0 +1,9 @@
+<!-- Begin include/footer/footer-links -->
+<ul class="no-bullet">
+	{% for link in site.data.footer %}
+	<li>
+		<a href="{% if link[1] contains "http" %}{{ link[1] }}{% else %}{% tl {{ link[1] }} %}{% endif %}">{% t link[0] %}</a>
+	</li>
+	{% endfor %}
+</ul>
+<!-- End include/footer/footer-links -->

@@ -1,0 +1,6 @@
+{% if page.tags %}
+<!-- Begin include/head/seo/tags -->
+<meta name="keywords" content="{% for tag in page.tags %}{% if forloop.last %}{% t titles.tags.{{ tag }} %}{% else %}{% t titles.tags.{{ tag }} %}, {% endif %}{% endfor %}" />
+{% assign metatag_name = metatag_name | push: "keywords" %}
+<!-- End   include/head/seo/tags -->
+{% endif %}

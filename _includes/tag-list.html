@@ -1,0 +1,10 @@
+<!-- Begin include/tag-list -->
+{% assign categories =  site.posts | map: 'tags' | join: ','  | split: ',' | uniq | sort %}
+<ul>
+	{% for category in categories %}
+	<li>
+		<a href="{{ category }}">{% t titles.tags.{{ category }} %}</a>
+	</li>
+	{% endfor %}
+</ul>
+<!-- End   include/tag-list -->

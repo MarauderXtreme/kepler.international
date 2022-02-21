@@ -1,0 +1,36 @@
+<!-- Begin include/header/main-nav_alt -->
+{% assign current_url = page.url | relative_url %}
+{% assign sorted_pages = site.pages | sort:"order" %}
+{% assign translatable_title = 'titles.pages' %}
+{% for node in sorted_pages %}
+	{% unless node.special or page.pagination_info.curr_page != 1 or page.pagination.tag %}
+		{% if node.namespace %}
+			{% capture node_url %}{% tl {{ node.namespace }} %}{% endcapture %}
+		{% else %}
+			{% assign node_url = node.url %}
+		{% endif %}
+		{% if node.title %}
+			{% assign translatable = node.title | split:translatable_title %}
+			{% if current_url == node_url and current_url == frontpage %}
+				<li class="is-active menu-text">
+					<a href="{{ node_url }}">{{ site.title }}</a>
+				</li>
+			{% elsif current_url contains node_url and current_url != frontpage and node_url != frontpage %}
+				<li class="is-active">
+					<a href="{{ node_url }}">{% if translatable[0] == blank %}{% t node.title %}{% else %}{{ node.title }}{% endif %}</a>
+				</li>
+			{% else %}
+				{% if node_url == frontpage %}
+					<li class="menu-text">
+						<a href="{{ node_url }}">{{ site.title }}</a>
+					</li>
+				{% else %}
+					<li>
+						<a href="{{ node_url }}">{% if translatable[0] == blank %}{% t node.title %}{% else %}{{ node.title }}{% endif %}</a>
+					</li>
+				{% endif %}
+			{% endif %}
+		{% endif %}
+	{% endunless %}
+{% endfor %}
+<!-- End   include/header/main-nav_alt -->

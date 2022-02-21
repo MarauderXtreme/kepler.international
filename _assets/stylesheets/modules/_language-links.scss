@@ -1,0 +1,19 @@
+.language {
+	svg {
+		filter: grayscale(100%); // asset_url('desaturate.svg#greyscale')
+		height: 0.7em;
+	}
+	&.active svg,
+	&:hover svg {
+		filter: none;
+	}
+}
+span.untranslated.language {
+	// Copied some code from foundation menu
+	margin-bottom: $menu-margin;
+	line-height: 1;
+  text-decoration: line-through;
+  display: block;
+  padding: $global-menu-padding;
+
+}

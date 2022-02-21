@@ -1,0 +1,13 @@
+<!-- Begin include/footer/social-links -->
+<ul class="social-links menu align-center medium-align-right">
+	{% for social in site.data.socials %}
+	<li>
+		{% assign social_svg = social[0] | prepend: "svg/" | append: ".svg" %}
+		<a class="{{ social[0] }}" href="{{ social[1] }}">{% include {{ social_svg }} %}</a>
+	</li>
+	{% endfor %}
+	<li>
+		<a class="rss" href="{{ "/feed.xml" | relative_url }}">{% include svg/rss.svg %}</a>
+	</li>
+</ul>
+<!-- End include/footer/social-links -->

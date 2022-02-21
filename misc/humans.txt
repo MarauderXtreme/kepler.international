@@ -1,0 +1,15 @@
+---
+layout: none
+permalink: /humans.txt
+---
+
+/* TEAM */
+  Author, Developer, Designer: Christoph Kepler
+  Twitter: @MarauderXtreme
+  Location: Dresden, Germany
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: Jekyll, Foundation Sites, jQuery, modernizr, what-input
+  Software: VS Code, Docker, Github Pages
+  Last Updated: {{ site.time | date: '%Y-%m-%d' }}

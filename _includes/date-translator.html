@@ -1,0 +1,53 @@
+{% comment %}
+Process the day numerals first
+{% endcomment %}
+{% if include.date %}
+	{% assign date = include.date %}
+{% endif %}
+{% assign day = date | date: "%-d" %}
+{% case site.lang %}
+	{% when "en" %}
+		{% case day %}
+			{% when  "1" %}{% assign d =  "1st" %}
+			{% when  "2" %}{% assign d =  "2nd" %}
+			{% when  "3" %}{% assign d =  "3rd" %}
+			{% when "21" %}{% assign d = "21st" %}
+			{% when "22" %}{% assign d = "22nd" %}
+			{% when "23" %}{% assign d = "23rd" %}
+			{% when "31" %}{% assign d = "31st" %}
+			{% else %}{% assign d = day | append: "th" %}
+		{% endcase %}
+	{% else %}
+		{% assign d = day %}
+{% endcase %}
+
+{% comment %}
+Translate month in the respective
+{% endcomment %}
+{% assign month = date | date: "%-m" %}
+{% case month %}
+	{% when  "1" %}{% capture m %}{% t months.january %}{% endcapture %}
+	{% when  "2" %}{% capture m %}{% t months.february %}{% endcapture %}
+	{% when  "3" %}{% capture m %}{% t months.march %}{% endcapture %}
+	{% when  "4" %}{% capture m %}{% t months.april %}{% endcapture %}
+	{% when  "5" %}{% capture m %}{% t months.may %}{% endcapture %}
+	{% when  "6" %}{% capture m %}{% t months.june %}{% endcapture %}
+	{% when  "7" %}{% capture m %}{% t months.july %}{% endcapture %}
+	{% when  "8" %}{% capture m %}{% t months.august %}{% endcapture %}
+	{% when  "9" %}{% capture m %}{% t months.september %}{% endcapture %}
+	{% when "10" %}{% capture m %}{% t months.october %}{% endcapture %}
+	{% when "11" %}{% capture m %}{% t months.november %}{% endcapture %}
+	{% when "12" %}{% capture m %}{% t months.december %}{% endcapture %}
+{% endcase %}
+
+{% comment %}
+Arrange the date display based on local variants
+Currently supported are
+- German long
+- British long
+{% endcomment %}
+{% case site.lang %}
+	{% when "de" %}{{ d }}. {{ m }} {{ date | date: "%-Y" }}
+	{% when "en" %}{{ d }} {{ m }} {{ date | date: "%-Y" }}
+	{% else %}{{ date | date_to_rfc822 }}
+{% endcase %}

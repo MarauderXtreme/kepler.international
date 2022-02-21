@@ -1,0 +1,95 @@
+---
+
+global:
+  claim: "Kepler - Entdecken des Uniwebsum"
+  you_are_here: "Du bist hier"
+  skip-link: "Direkt zum Inhalt"
+  current: "Aktuell"
+  home: "Startseite"
+  menu: "Menü"
+  posted_by: "Veröffentlicht von"
+  at: "am"
+  updated: "und zuletzt aktualisiert am"
+  more: "Weiterlesen"
+  pagination: "Paginierung"
+  previous: "Vorherige"
+  previous_page: "Vorherige Seite"
+  next: "Nächste"
+  next_page: "Nächste Seite"
+  page: "Seite"
+  useful-links: "Nützliche Links"
+  mistakes: "Fehler gefunden? Lass es mich wissen…"
+  do-ref: "Mein Referrerlink zu Digital Ocean"
+  fm-ref: "Mein Referrerlink zu Fastmail"
+  root-cert: "Root Certificate"
+
+titles:
+  pages:
+    index: "Kepler International"
+    about: "Über Mich"
+    blog: "Logbuch"
+    posts: Pfosten
+    projects: "Schöpfungen"
+    reviews: "Abhandlungen"
+    tutorials: "Formelsammlung"
+    legal: "Rechtliches"
+    imprint: "Impressum"
+    data-protection: "Datenschutzerklärung"
+    disclaimer: "Haftungsausschluss (Disclaimer)"
+    license: "Lizenz"
+    categories: "Kategorien"
+  tags:
+    administration: "Administration"
+    crazy-things: "Verrücktes"
+    development: "Entwicklung"
+    dns: "DNS"
+    drupal: "Drupal"
+    email: "E-Mail"
+    encryption: "Verschlüsselung"
+    everyday-life: "Alltag"
+    java: "Java"
+    linux: "Linux"
+    mobile: "Mobil"
+    music: "Musik"
+    movies: "Filme"
+    pop-culture: "Pop-Kultur"
+    programming: "Programmierung"
+    security: "Sicherheit"
+    software: "Software"
+    tv-series: "TV-Serien"
+    university: "Universität"
+    video-games: "Videospiele"
+    website: "Website"
+
+metatags:
+  name:
+    description: >-
+      Ich bin Christoph Kepler.
+      Auf dieser Website schreibe ich über Dinge, die mich interessieren.
+      Ihr findet hier meinen Blog, meine Projekte, Anleitungen und Reviews.
+    abstract: >-
+      Website von Christoph Kepler.
+      Auf dieser Seite ist sein Blog, seine Projekte, Anleitungen und Reviews zu finden.
+  property:
+    "og:image:alt": >-
+      Ein stilisiertes Teleskop aus vier Rechtecken aufgebaut.
+      Es zeigt in die obere rechte Ecke.
+      Das unterste, aufrechte Rehteck von dunkler Farbe ist wie ein Stock geformt und definiert das Stativ.
+      Ein kleines, schmales Rechteck von dunkler Farbe zeigt in linke, untere Ecke stellt das Okular dar.
+      In der Mitte ist ein helles (orange), längeres Rechteck, was den Korpus symbolisiert.
+      Am Ende in der rechten oberen Ecke ist ein größeres Rechteck von dunkler Farbe, welches die Linse darstellt.
+      Über allem steht der Name der Seite 'Kepler International'
+
+months:
+  january: "Januar"
+  february: "Februar"
+  march: "März"
+  april: "April"
+  may: "Mai"
+  june: "Juni"
+  july: "Juli"
+  august: "August"
+  september: "September"
+  october: "Oktober"
+  november: "November"
+  december: "Dezember"

@@ -1,0 +1,46 @@
+.social-links {
+	svg {
+		fill: var(--social-fill-colour);
+		height: 2em;
+		width: 2em;
+
+	}
+	a {
+		display: inline-block;
+		padding: .4rem .5rem;
+		line-height: 1;
+
+	}
+	.twitter {
+		background-color: var(--twitter-colour);
+
+	}
+	.github {
+		background-color: var(--github-colour);
+
+	}
+	.gitlab {
+		background-color: var(--gitlab-colour);
+
+	}
+	.steam {
+		background-color: var(--steam-colour);
+
+	}
+	.twitch {
+		background-color: var(--twitch-colour);
+
+	}
+	.spotify {
+		background-color: var(--spotify-colour);
+
+	}
+	.facebook {
+		background-color: var(--facebook-colour);
+
+	}
+	.rss {
+		background-color: var(--rss-colour);
+
+	}
+}

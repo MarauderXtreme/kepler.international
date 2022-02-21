@@ -1,0 +1,16 @@
+<!-- Begin include/head/seo -->
+{% assign metatag_name = '' | split: ',' %}
+<meta name="generator" content="Jekyll v{{ jekyll.version }} (https://jekyllrb.com/)" />
+{% assign metatag_name = metatag_name | push: "generator" %}
+{% include head/seo/title.html %}
+{% include head/seo/excerpt.html %}
+{% include head/seo/tags.html %}
+{% include head/seo/date.html %}
+{% include head/seo/name.html %}
+{% include head/seo/property.html %}
+{% include head/seo/rel.html %}
+{% include head/seo/url.html %}
+{% include head/seo/paginator.html %}
+{% include head/seo/hreflang.html %}
+{% include head/seo/icons.html %}
+<!-- End   include/head/seo -->

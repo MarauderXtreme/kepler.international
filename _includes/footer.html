@@ -1,0 +1,20 @@
+<!-- Begin include/footer -->
+<footer>
+	<div class="grid-container">
+		<div class="grid-x grid-padding-x">
+			<div class="cell">
+				<h3>{% t global.useful-links %}</h3>
+			</div>
+			<div class="cell medium-6">
+				{% include footer/footer-links.html %}
+			</div>
+			<div class="cell medium-6">
+				{% include footer/social-links.html %}
+			</div>
+			<div class="cell">
+				&copy; {{ site.time | date: '%Y' }} <a href="{% tl license %}">BOfH</a> <a href="{% tl license %}">CC-BY-SA 4.0</a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End   include/footer -->

@@ -1,0 +1,17 @@
+// require modernizr.min.js
+//= require jquery.min.js
+//= require what-input.min.js
+//= require foundation.core.min.js
+//= require foundation.util.triggers.min.js
+//= require foundation.util.mediaQuery.min.js
+//= require foundation.util.keyboard.min.js
+//= require foundation.util.box.min.js
+//= require foundation.util.nest.min.js
+//= require foundation.util.touch.min.js
+//= require foundation.util.motion.min.js
+//= require foundation.dropdownMenu.min.js
+//= require foundation.drilldown.min.js
+//= require foundation.accordionMenu.min.js
+//= require foundation.responsiveMenu.min.js
+//= require foundation.responsiveToggle.min.js
+// require foundation.min.js

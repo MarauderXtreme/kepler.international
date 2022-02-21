@@ -1,0 +1,15 @@
+<!-- Begin include/head/seo/icons -->
+<link rel="shortcut icon" href="{% asset favicon.ico @path %}">
+{% for group in site.data.icons.groups %}
+	{% capture rel %}{% if group.rel %}{{ group.rel }}{% else %}icon{% endif %}{% endcapture %}
+	{% for size in group.sizes %}
+		{% if group.type == "ms-icon" %}
+			<meta name="{{ rel }}" content="{% asset '{{ group.type }}-{{ size }}'.png @path %}" />
+		{% elsif group.type == "apple-icon" %}
+			<link rel="{{ rel }}" sizes="{{ size }}" href="{% asset '{{ group.type }}-{{ size }}'.png @path %}" />
+		{% else %}
+			<link rel="{{ rel }}" type="image/png" sizes="{{ size }}" href="{% asset '{{ group.type }}-{{ size }}'.png @path %}" />
+		{% endif %}
+	{% endfor %}
+{% endfor %}
+<!-- End   include/head/seo/icons -->

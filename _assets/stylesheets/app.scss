@@ -1,0 +1,50 @@
+/** @file
+ * This file is a custom file that loads all files. Each non-base layer
+ * can be disabled.
+ *
+ * This application file (app.scss) is where all the partials are
+ * imported.
+ *
+ * Theme styles are categorized using SMACSS standards. They utilize
+ * categorization of styles into various categories. Those categories are the
+ * following:
+ *
+ * - Base: CSS reset/normalize plus HTML element styling.
+ * - Layout: Macro arrangement of a web page, including any grid systems.
+ * - Modules: Dictate minor layout modules or reusable elements.
+ * - States: Describe the appearance of a module in various states.
+ * - Theme: Specific customizations for your subtheme.
+ * - http://smacss.com/
+ *
+ * @author Christoph Kepler <development@kepler.international>
+ */
+
+// Make the fonts known early on for settings
+@import 'base/fonts';
+
+// Import tweaked foundation settings
+@import 'theme/settings';
+
+// import foundation
+@import 'foundation';
+
+// Import set of foundation components
+@import 'vendor/foundation-components';
+
+// Import SMACSS
+
+@import 'base/base';
+
+@import 'layout/header';
+@import 'layout/header-image';
+@import 'layout/breadcrumbs';
+@import 'layout/footer';
+
+@import 'modules/debug';
+@import 'modules/external_links';
+@import 'modules/language-links';
+@import 'modules/menu';
+@import 'modules/post-meta';
+@import 'modules/social-links';
+
+@import 'states/navigation';

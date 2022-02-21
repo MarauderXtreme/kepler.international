@@ -1,0 +1,33 @@
+<!-- Begin include/post-meta-information -->
+{% if page.date %}
+	{% capture pd %}{% include date-translator.html date = page.date %}{% endcapture %}
+{% elsif post.date %}
+	{% capture pd %}{% include date-translator.html date = post.date %}{% endcapture %}
+{% endif %}
+{% if page.last_modified_at %}
+	{% capture lmad %}{% include date-translator.html date = page.last_modified_at %}{% endcapture %}
+{% elsif post.last_modified_at %}
+{% capture lmad %}{% include date-translator.html date = post.last_modified_at %}{% endcapture %}
+{% endif %}
+{% if page.tags %}
+	{% assign tags = page.tags | sort %}
+{% elsif post.tags %}
+	{% assign tags = post.tags | sort %}
+{% endif %}
+<div class="post-meta">
+	<p>
+		<small>{% t global.posted_by %} <a href="{% tl about %}">BOfH</a> {% t global.at %} {{ pd }}</small>
+	{% if page.last_modified_at or post.last_modified_at %}
+		<small>{% t global.updated %} {{ lmad }}</small>
+	{% endif %}
+	</p>
+	{% if tags %}
+	<p class="categories">
+		<span class="label">{% t titles.pages.categories %}</span>
+		{% for tag in tags %}
+		<a class="hollow tiny button" href="{% tl categories %}/{{ tag }}">{% t titles.tags.{{ tag }} %}</a>
+		{% endfor %}
+	</p>
+	{% endif %}
+</div>
+<!-- End   include/post-meta-information -->

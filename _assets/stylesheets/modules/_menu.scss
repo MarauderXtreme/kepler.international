@@ -1,0 +1,10 @@
+.menu {
+	&.align-center {
+		justify-content: center;
+	}
+	&.medium-align-right {
+		@include breakpoint(medium up) {
+			justify-content: flex-end;
+		}
+	}
+}

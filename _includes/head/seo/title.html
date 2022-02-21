@@ -1,0 +1,17 @@
+<!-- Begin include/head/seo/title -->
+{% assign frontpage = "/" | relative_url %}
+{% assign current_url = page.url | remove: 'index.html' | relative_url %}
+{% if current_url == frontpage %}
+<title>{{ site.title }} | {% t global.claim %}</title>
+<meta property="og:title" content="{{ site.title }} | {% t global.claim %}" />
+<meta name="twitter:title" content="{{ site.title }} | {% t global.claim %}" />
+{% assign metatag_name = metatag_name | push: "og:title" %}
+{% assign metatag_name = metatag_name | push: "twitter:title" %}
+{% else %}
+<title>{% if translatable %}{% t page.title %}{% else %}{{ page.title }}{% endif %} | {{ site.title }}</title>
+<meta property="og:title" content="{% if translatable %}{% t page.title %}{% else %}{{ page.title }}{% endif %} | {{ site.title }}" />
+<meta name="twitter:title" content="{% if translatable %}{% t page.title %}{% else %}{{ page.title }}{% endif %} | {{ site.title }}" />
+{% assign metatag_name = metatag_name | push: "og:title" %}
+{% assign metatag_name = metatag_name | push: "twitter:title" %}
+{% endif %}
+<!-- End   include/head/seo/title -->

@@ -1,0 +1,21 @@
+<!-- Begin include/head/seo/hreflang -->
+{% if page.namespace %}
+	{% capture deutsch %}{% tl {{ page.namespace }} de | prepend: site.baseurl_root %}{% endcapture %}
+	{% capture english %}{% tl {{ page.namespace }} en | prepend: "/en" | prepend: site.baseurl_root %}{% endcapture %}
+{% else %}
+	{% assign deutsch = page.url | prepend: site.baseurl_root | remove: '/index.html' %}
+	{% assign english = page.url | prepend: "/en" | prepend: site.baseurl_root | remove: '/index.html' %}
+{% endif %}
+{% if deutsch == "" %}
+	{% assign deutsch = "/" %}
+{% endif %}
+<link href="{{ deutsch }}" hreflang="de" rel="alternate" />
+<link href="{{ english }}" hreflang="en" rel="alternate" />
+{% for language in site.languages %}
+	{% if language == site.lang %}
+		<meta property="og:locale" content="{{ language }}" />
+	{% else %}
+		<meta property="og:locale:alternate" content="{{ language }}" />
+	{% endif %}
+{% endfor %}
+<!-- End   include/head/seo/hreflang -->

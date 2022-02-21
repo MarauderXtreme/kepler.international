@@ -1,0 +1,173 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Kepler International
+baseurl: ""
+url: "https://kepler.international/"
+teaser-length: 600
+
+# Build settings
+# theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-assets
+  - jekyll-multiple-languages-plugin
+  - jekyll-relative-links
+  - jekyll-target-blank
+  - jekyll-titles-from-headings
+  - jekyll-optional-front-matter
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - package-lock.json
+  - README.md
+  - LICENSE
+  - node_modules/
+  - vendor/
+
+include:
+  - .well-known
+
+titles_from_headings:
+  enabled:      true
+  strip_title:  true
+  collections:  true
+
+languages:
+  - 'de'
+  - 'en'
+
+exclude_from_localizations:
+  - _assets
+  - assets
+  - .well-known
+  - misc/humans.txt
+
+timezone: Europe/Berlin
+
+assets:
+  compress:
+    css: true
+    js: uglifier
+  destination: "/assets"
+  source_maps: true
+  compression: true
+  digest: true
+  caching:
+    enabled: true
+    path: ".jekyll-cache/assets"
+    type: file
+  sources:
+    - _assets
+    - _assets/fonts/Fira_Code/static
+    - _assets/fonts/Fira_Sans/
+    - _assets/fonts/UnifrakturMaguntia
+    - _assets/pictures
+    - _assets/images
+    - _assets/javascript
+    - _assets/stylesheets
+    - node_modules/jquery/dist
+    - node_modules/what-input/dist
+    - node_modules/foundation-sites/dist/js/plugins
+    - node_modules/foundation-sites/scss
+    - node_modules/foundation-sites/_vendor
+  plugins:
+    css: { autoprefixer: {}}
+    img:
+      optim:
+        optipng:
+          level: 7
+          interlace: nil
+        jpegoptim: {}
+  autoprefixer:
+    browsers:
+      - "last 2 versions"
+  # gzip: true
+
+target-blank:
+  add_css_classes: external-link
+
+compress_html:
+  clippings: []
+  comments: []
+  endings: []
+  ignore:
+    envs: []
+  blanklines: true
+  profile: false
+  startings: []
+
+pagination:
+  enabled: true
+  per_page: 6
+  permalink: '/:num.html'
+  limit: 6
+  title: ':title'
+  sort_field: 'date'
+  sort_reverse: true
+
+autopages:
+  enabled: true
+  categories:
+    layouts:
+      - 'autopage.html'
+    title: 'titles.pages.:cat'
+    permalink: '/:cat'
+    slugify:
+      mode: 'pretty'
+  tags:
+    layouts:
+      - 'autopage.html'
+    title: 'titles.tags.:tag'
+    permalink: '/categories/:tag'
+    slugify:
+      mode: 'pretty'
+  collections:
+    layouts:
+      - 'autopage.html'
+    title: 'titles.pages.index'
+    permalink: '/'
+    slugify:
+      mode: 'pretty'
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

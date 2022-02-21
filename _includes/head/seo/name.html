@@ -1,0 +1,32 @@
+<!-- Begin include/head/seo/name -->
+{% for metatag in page.metatags.name %}
+	{% unless metatag[1] == "" %}
+		{% if metatag[0] == "twitter:image" %}
+			<meta name="{{ metatag[0] }}" content="{{ site.url }}{% asset '{{ metatag[1] }}'  @path %}" />
+		{% else %}
+			<meta name="{{ metatag[0] }}" content="{{ metatag[1] }}" />
+		{% endif %}
+		{% assign metatag_name = metatag_name | push: metatag[0] %}
+	{% endunless %}
+{% endfor %}
+{% for metatag in site.translations[site.lang].metatags.name %}
+	{% unless metatag[1] == "" or metatag_name contains metatag[0] %}
+		{% if metatag[0] == "twitter:image" %}
+			<meta name="{{ metatag[0] }}" content="{{ site.url }}{% asset '{{ metatag[1] }}'  @path %}" />
+		{% else %}
+			<meta name="{{ metatag[0] }}" content="{{ metatag[1] }}" />
+		{% endif %}
+		{% assign metatag_name = metatag_name | push: metatag[0] %}
+	{% endunless %}
+{% endfor %}
+{% for metatag in site.data.metatags.name %}
+	{% unless metatag[1] == "" or metatag_name contains metatag[0] %}
+		{% if metatag[0] == "twitter:image" %}
+			<meta name="{{ metatag[0] }}" content="{{ site.url }}{% asset '{{ metatag[1] }}'  @path %}" />
+		{% else %}
+			<meta name="{{ metatag[0] }}" content="{{ metatag[1] }}" />
+		{% endif %}
+		{% assign metatag_name = metatag_name | push: metatag[0] %}
+	{% endunless %}
+{% endfor %}
+<!-- End   include/head/seo/name -->

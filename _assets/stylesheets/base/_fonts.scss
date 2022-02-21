@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "Fira Sans";
+	src:	local("Fira Sans"),
+				asset_url("FiraSans-Regular.ttf") format("truetype");
+
+}
+
+@font-face {
+	font-family: "Fira Code";
+	src:	local("FiraCode Nerd Font Mono"),
+				local("FiraCode Nerd Font"),
+				local("FuraCode Nerd Font Mono"),
+				local("FuraCode Nerd Font"),
+				asset_url("FiraCode-Regular.ttf")	format("truetype");
+
+}
+
+@font-face {
+	font-family: "UnifrakturMaguntia";
+	src:	local("Tannenberg Fett"),
+				asset_url("UnifrakturMaguntia.ttf") format("truetype");
+
+}
