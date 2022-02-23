@@ -45,6 +45,7 @@ group :jekyll_plugins do
 end
 
 group :assets_plugins do
+	gem "sprockets", git: "https://github.com/MarauderXtreme/sprockets"
   gem "uglifier"
 	gem "autoprefixer-rails"
   gem "image_optim"
