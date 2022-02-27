@@ -2,7 +2,7 @@
 namespace: bots-ssh
 permalink: /blog/bots-moegen-keine-moderne-ssh-konfiguration
 permalink_en: /blog/bots-dont-like-modern-ssh-configuration
-languages: de
+languages: ["de"]
 category: blog
 tags: administration security
 ---

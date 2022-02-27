@@ -2,7 +2,7 @@
 namespace: update-net-future
 permalink: /blog/update-netz-zukunft
 permalink_en: /blog/update-net-future
-languages: de
+languages: ["de"]
 last_modified_at: 2015-12-28T00:00:00.00+01:00
 category: blog
 tags: administration encryption website

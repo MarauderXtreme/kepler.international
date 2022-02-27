@@ -2,7 +2,7 @@
 namespace: deploy-code-git
 permalink: /tutorials/deploy-code-git
 permalink_en: /tutorials/deploy-code-git
-languages: de
+languages: ["de"]
 category: tutorials
 tags: administration programming website
 ---

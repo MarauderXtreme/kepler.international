@@ -3,7 +3,7 @@ namespace: ukt
 permalink: /projects/ubuntu-kernel-tools
 permalink_en: /projects/ubuntu-kernel-tools
 last_modified_at: 2018-08-14T00:00:00.00+02:00
-languages: de
+languages: ["de"]
 category: projects
 tags: software development linux
 ---

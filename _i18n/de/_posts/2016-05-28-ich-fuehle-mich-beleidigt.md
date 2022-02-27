@@ -2,7 +2,7 @@
 namespace: feel-insulted
 permalink: /blog/ich-fuehle-mich-beleidigt
 permalink_en: /blog/i-feel-insulted
-languages: de
+languages: ["de"]
 category: blog
 tags: website
 ---
