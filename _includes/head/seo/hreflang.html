@@ -1,3 +1,4 @@
+{% if page.languages == nil or page.languages.size > 1 %}
 <!-- Begin include/head/seo/hreflang -->
 {% if page.namespace %}
 	{% capture deutsch %}{% tl {{ page.namespace }} de | prepend: site.baseurl_root %}{% endcapture %}
@@ -19,3 +20,4 @@
 	{% endif %}
 {% endfor %}
 <!-- End   include/head/seo/hreflang -->
+{% endif %}
