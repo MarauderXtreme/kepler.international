@@ -1,0 +1,5 @@
+.pagination .disabled,
+.pagination-previous.disabled::before,
+.pagination-next.disabled::after {
+	text-decoration: line-through;
+}
