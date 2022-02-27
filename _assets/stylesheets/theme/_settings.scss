@@ -65,7 +65,7 @@ $label-color-alt: $primary-color;
 // --------------
 
 $pagination-item-color: var(--primary-colour);
-$pagination-item-background-hover: $kepler-blue-light;
+$pagination-item-background-hover: var(--secondary-colour-light);
 $pagination-item-background-current: var(--primary-colour);
 $pagination-item-color-current: var(--secondary-colour);
 $pagination-item-color-disabled: var(--dark-grey-colour);
@@ -73,6 +73,6 @@ $pagination-item-color-disabled: var(--dark-grey-colour);
 // 55. Top Bar
 // -----------
 
-$topbar-background: $kepler-blue-light;
-$topbar-submenu-background: $kepler-blue-light;
+$topbar-background: var(--secondary-colour-light);
+$topbar-submenu-background: var(--secondary-colour-light);
 $topbar-title-spacing: 0;

@@ -1,6 +1,7 @@
 :root {
   --primary-colour: #FF6600;
   --secondary-colour: #00050f;
+	--secondary-colour-light: #000d28;
   --success-colour: #3adb76;
   --warning-colour: #ffae00;
   --alert-colour: #cc4b37;
@@ -25,6 +26,7 @@
 [data-theme="light"] {
   --primary-colour: #00050f;
   --secondary-colour: #FF6600;
+	--secondary-colour: #000d28;
   --success-colour: #3adb76;
   --warning-colour: #ffae00;
   --alert-colour: #cc4b37;
