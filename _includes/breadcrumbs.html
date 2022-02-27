@@ -12,8 +12,9 @@
 			<nav class="cell" aria-label="{% t global.you_are_here %}:" role="navigation">
 				<ul id="breadcrumbs" class="breadcrumbs">
 					{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
-					{% assign frontpage = "/" | relative_url %}
-					{% if frontpage == page.url | relative_url %}
+					{% assign frontpage = "/" | relative_url | remove:'index.html' %}
+					{% assign nodeurl = page.url | relative_url | remove:'index.html' %}
+					{% if frontpage == nodeurl %}
 					<li>
 						<span class="show-for-sr">{% t global.current %}: </span> {% t global.home %}
 					</li>
