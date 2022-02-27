@@ -11,16 +11,16 @@
 {% endif %}
 <li>
 	{% if page.languages contains "de" or page.languages == nil %}
-	<a class="{% if site.lang == "de" %}active {% endif %}language" href="{{ deutsch }}" lang="de">{% include svg/german_flag.svg %} Deutsch</a>
+	<a class="{% if site.lang == "de" %}active {% endif %}language" href="{{ deutsch }}" lang="de" xml:lang="de">{% include svg/german_flag.svg %} Deutsch</a>
 	{% else %}
-	<span class="untranslated language" lang="de">{% include svg/german_flag.svg %} <span class="show-for-sr">Aktuell nicht übersetzt in </span>Deutsch</span>
+	<span class="untranslated language" lang="de" xml:lang="de">{% include svg/german_flag.svg %} <span class="show-for-sr">Aktuell nicht übersetzt in </span>Deutsch</span>
 	{% endif %}
 </li>
 <li>
 	{% if page.languages contains "en" or page.languages == nil %}
-	<a class="{% if site.lang == "en" %}active {% endif %}language" href="{{ english }}" lang="en">{% include svg/british_flag.svg %} English</a>
+	<a class="{% if site.lang == "en" %}active {% endif %}language" href="{{ english }}" lang="en" xml:lang="en">{% include svg/british_flag.svg %} English</a>
 	{% else %}
-	<span class="untranslated language" lang="en">{% include svg/british_flag.svg %} <span class="show-for-sr">Currently not translated to </span>English</span>
+	<span class="untranslated language" lang="en" xml:lang="en">{% include svg/british_flag.svg %} <span class="show-for-sr">Currently not translated to </span>English</span>
 	{% endif %}
 </li>
 <!-- End   include/header/language-switcher -->
