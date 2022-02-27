@@ -14,4 +14,4 @@ Fritz-Hoffmann-Straße 2
 
 ## Kontakt Informationen
 
-E-Mail: [Kontakt](mailto:impressum@kepler.international)
+E-Mail: [Kontakt](mailto:{{ 'impressum@kepler.international' | encode_email }})
