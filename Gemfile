@@ -42,6 +42,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate-v2"
   gem "jekyll-multiple-languages-plugin"
 	gem "jekyll-target-blank"
+  gem "jekyll-email-protect"
 end
 
 group :assets_plugins do

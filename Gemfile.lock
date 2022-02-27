@@ -114,6 +114,7 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
+    jekyll-email-protect (1.1.0)
     jekyll-feed (0.16.0)
       jekyll (>= 3.7, < 5.0)
     jekyll-gist (1.5.0)
@@ -220,6 +221,7 @@ DEPENDENCIES
   image_optim_pack
   jekyll (~> 3)
   jekyll-assets!
+  jekyll-email-protect
   jekyll-feed
   jekyll-gist
   jekyll-github-metadata
