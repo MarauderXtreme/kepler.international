@@ -39,10 +39,10 @@ $font-family-monospace: 'Fira Code', Consolas, 'Liberation Mono', Courier, monos
 
 $breadcrumbs-item-color: var(--primary-colour);
 $breadcrumbs-item-color-current: var(--white-colour);
-$breadcrumbs-item-color-disabled: var(--medium-gray-colour);
+$breadcrumbs-item-color-disabled: var(--medium-grey-colour);
 $breadcrumbs-item-separator-item: '->';
 $breadcrumbs-item-separator-item-rtl: '<-';
-$breadcrumbs-item-separator-color: var(--medium-gray-colour);
+$breadcrumbs-item-separator-color: var(--medium-grey-colour);
 
 // 13. Callout
 // -----------
@@ -52,6 +52,15 @@ $callout-background-fade: 5%;
 $callout-border: 0.2em solid rgba($kepler-orange, 0.25);
 $callout-font-color: $white;
 $callout-font-color-alt: $kepler-blue;
+
+// 27. Pagination
+// --------------
+
+$pagination-item-color: var(--primary-colour);
+$pagination-item-background-hover: $kepler-blue-light;
+$pagination-item-background-current: var(--primary-colour);
+$pagination-item-color-current: var(--secondary-colour);
+$pagination-item-color-disabled: var(--dark-grey-colour);
 
 // 55. Top Bar
 // -----------
