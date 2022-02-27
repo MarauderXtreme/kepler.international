@@ -29,6 +29,8 @@ $body-background: var(--secondary-colour);
 $body-font-color: var(--white-colour);
 $body-font-family: 'Fira Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 
+@include add-foundation-colors;
+
 // 4. Base Typography
 // ------------------
 
@@ -47,17 +49,17 @@ $breadcrumbs-item-separator-color: var(--medium-grey-colour);
 // 13. Callout
 // -----------
 
-$callout-background: $kepler-blue;
+$callout-background: $secondary-color;
 $callout-background-fade: 5%;
-$callout-border: 0.15em solid rgba($kepler-orange, 0.6);
+$callout-border: 0.15em solid rgba($primary-color, 0.6);
 $callout-font-color: $white;
-$callout-font-color-alt: $kepler-blue;
+$callout-font-color-alt: $secondary-color;
 
 // 21. Label
 // ---------
 
-$label-color: $kepler-blue;
-$label-color-alt: $kepler-orange;
+$label-color: $secondary-color;
+$label-color-alt: $primary-color;
 
 // 27. Pagination
 // --------------
