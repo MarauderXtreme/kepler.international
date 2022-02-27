@@ -2,7 +2,7 @@
 namespace: drupal-modules
 permalink: /tutorials/nuetzliche-drupal-module
 permalink_en: /tutorials/useful-drupal-modules
-languages: de
+languages: ["de"]
 category: tutorials
 tags: drupal website
 ---
