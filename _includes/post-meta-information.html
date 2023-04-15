@@ -25,7 +25,7 @@
 	<p class="categories">
 		<span class="label">{% t titles.pages.categories %}</span>
 		{% for tag in tags %}
-		<a class="hollow tiny button" href="{% tl categories %}/{{ tag }}">{% t titles.tags.{{ tag }} %}</a>
+		<a class="tiny hollow button" href="{% tl categories %}/{{ tag }}">{% t titles.tags.{{ tag }} %}</a>
 		{% endfor %}
 	</p>
 	{% endif %}
