@@ -9,7 +9,7 @@
 <div class="breadcrumb-wrapper">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x">
-			<nav class="cell" aria-label="{% t global.you_are_here %}:" role="navigation">
+			<nav class="cell auto" aria-label="{% t global.you_are_here %}:" role="navigation">
 				<ul id="breadcrumbs" class="breadcrumbs">
 					{% assign crumbs = page.url | remove:'/index.html' | split: '/' %}
 					{% assign frontpage = "/" | relative_url | remove:'index.html' %}
@@ -54,6 +54,14 @@
 					{% endfor %}
 				</ul>
 			</nav>
+			<div class="cell shrink">
+				<div class="switch">
+					<input class="switch-input" type="checkbox" id="checkbox" name="checkbox" />
+					<label class="switch-paddle" for="checkbox">
+						<span class="show-for-sr">{% t global.theme_switch %}</span>
+					</label>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
