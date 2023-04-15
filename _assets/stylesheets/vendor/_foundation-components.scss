@@ -12,7 +12,8 @@
 @include foundation-button;
 // @include foundation-button-group;
 // @include foundation-close-button;
-@include foundation-label;
+@include hacked-foundation-label;
+// @include foundation-label;
 // @include foundation-progress-bar;
 // @include foundation-slider;
 // @include foundation-switch;
@@ -20,7 +21,8 @@
 // Basic components
 // @include foundation-badge;
 @include foundation-breadcrumbs;
-@include foundation-callout;
+@include hacked-foundation-callout;
+// @include foundation-callout;
 // @include foundation-card;
 // @include foundation-dropdown;
 @include foundation-pagination;

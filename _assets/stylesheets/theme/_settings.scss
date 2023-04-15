@@ -9,6 +9,7 @@
 $kepler-blue: #00050f;
 $kepler-blue-light: scale-color($kepler-blue, $lightness: +5%);
 $kepler-orange: #FF6600;
+$kepler-orange-light: scale-color($kepler-orange, $lightness: +5%);
 
 // 1. Global
 // ---------
@@ -49,17 +50,19 @@ $breadcrumbs-item-separator-color: var(--medium-grey-colour);
 // 13. Callout
 // -----------
 
-$callout-background: $secondary-color;
-$callout-background-fade: 5%;
-$callout-border: 0.15em solid rgba($primary-color, 0.6);
-$callout-font-color: $white;
-$callout-font-color-alt: $secondary-color;
+$callout-background: "secondary";
+// Not used anymore
+// Instead colour-light has been generated for every colour in the foundatiuon-palete
+// $callout-background-fade: 5%;
+$callout-border: 0.15em solid rgba(var(--primary-colour-rgba), 0.6);
+$callout-font-color: var(--white-colour);
+$callout-font-color-alt: var(--secondary-colour);
 
 // 21. Label
 // ---------
 
-$label-color: $secondary-color;
-$label-color-alt: $primary-color;
+$label-background: var(--primary-colour-light);
+$label-color: var(--secondary-colour-light);
 
 // 27. Pagination
 // --------------
