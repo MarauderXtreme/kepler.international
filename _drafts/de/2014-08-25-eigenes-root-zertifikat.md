@@ -2,6 +2,7 @@
 namespace: own-root-cert
 permalink: /tutorials/eigenes-root-zertifikat
 permalink_en: /tutorials/own-root-certificate
+languages: ["de"]
 category: tutorials
 tags: administration linux encryption
 ---
