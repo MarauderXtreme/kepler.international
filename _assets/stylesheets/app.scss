@@ -28,15 +28,21 @@
 // import foundation
 @import 'foundation';
 
+// Override hacked foundation components
+@import 'modules/callout';
+@import 'modules/label';
+
 // Import set of foundation components
 @import 'vendor/foundation-components';
 
 // Import SMACSS
 
+@import 'base/dark-base';
 @import 'base/base16-outrun-dark';
 @import 'base/rainbow_dash';
-@import 'base/highlight';
+@import 'base/light-base';
 @import 'base/base';
+@import 'base/highlight';
 
 @import 'layout/header';
 @import 'layout/header-image';

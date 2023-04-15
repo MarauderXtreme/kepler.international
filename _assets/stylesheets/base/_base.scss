@@ -1,47 +1,32 @@
+// Default theme should be dark
 :root {
-  --primary-colour: #FF6600;
-  --secondary-colour: #00050f;
-	--secondary-colour-light: #000d28;
-  --success-colour: #3adb76;
-  --warning-colour: #ffae00;
-  --alert-colour: #cc4b37;
-	--light-grey-colour: #e6e6e6;
-	--medium-grey-colour: #cacaca;
-	--dark-grey-colour: #8a8a8a;
-	--black-colour: #0a0a0a;
-	--white-colour: #fefefe;
-	--star-colour: #ffffff;
-	--claim-colour: #ffdd55;
-	--social-fill-colour: #ffffff;
-	--twitter-colour: #1DA1F2;
-	--github-colour: #181717;
-	--gitlab-colour: #FCA121;
-	--steam-colour: #000000;
-	--twitch-colour: #9146FF;
-	--spotify-colour: #1DB954;
-	--facebook-colour: #1877F2;
-	--rss-colour: #FFA500;
+	@include base-colours-dark;
+	@include base16-outrun-dark-pygment;
 }
 
-[data-theme="light"] {
-  --primary-colour: #00050f;
-  --secondary-colour: #FF6600;
-	--secondary-colour: #000d28;
-  --success-colour: #3adb76;
-  --warning-colour: #ffae00;
-  --alert-colour: #cc4b37;
-	--light-grey-colour: #e6e6e6;
-	--medium-grey-colour: #cacaca;
-	--dark-grey-colour: #8a8a8a;
-	--black-colour: #0a0a0a;
-	--white-colour: #fefefe;
-	--social-fill-colour: #ffffff;
-	--twitter-colour: #1DA1F2;
-	--github-colour: #181717;
-	--gitlab-colour: #FCA121;
-	--steam-colour: #000000;
-	--twitch-colour: #9146FF;
-	--spotify-colour: #1DB954;
-	--facebook-colour: #1877F2;
-	--rss-colour: #FFA500;
+// If dark prefered include dark
+@media (prefers-color-scheme: dark) {
+	:root {
+		@include base-colours-dark;
+		@include base16-outrun-dark-pygment;
+	}
+}
+
+// If light prefered include dark
+@media (prefers-color-scheme: light) {
+	:root {
+		@include base-colours-light;
+		@include rainbow_dash-pygment;
+	}
+}
+
+[data-theme="dark"]:root {
+	@include base-colours-dark;
+	@include base16-outrun-dark-pygment;
+}
+
+
+[data-theme="light"]:root {
+	@include base-colours-light;
+	@include rainbow_dash-pygment;
 }
