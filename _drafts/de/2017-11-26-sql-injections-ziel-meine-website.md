@@ -2,8 +2,9 @@
 namespace: sql-injections-on-me
 permalink: /blog/sql-injections-ziel-meine-website
 permalink_en: blog/sql-injections-target-my-website
+languages: ["de"]
 category: blog
-tag: security website
+tags: security website
 ---
 
 # SQL Injections - Ziel: Meine Website

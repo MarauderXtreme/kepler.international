@@ -22,6 +22,7 @@ global:
   do-ref: "My referral link to Digital Ocean"
   fm-ref: "My referral link to Fastmail"
   root-cert: "Root Certificate"
+  theme_switch: "Switch between dark and light design"
 
 titles:
   pages:

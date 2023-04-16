@@ -28,12 +28,21 @@
 // import foundation
 @import 'foundation';
 
+// Override hacked foundation components
+@import 'modules/callout';
+@import 'modules/label';
+
 // Import set of foundation components
 @import 'vendor/foundation-components';
 
 // Import SMACSS
 
+@import 'base/dark-base';
+@import 'base/base16-outrun-dark';
+@import 'base/rainbow_dash';
+@import 'base/light-base';
 @import 'base/base';
+@import 'base/highlight';
 
 @import 'layout/header';
 @import 'layout/header-image';
@@ -47,6 +56,7 @@
 @import 'modules/post-meta';
 @import 'modules/read-more-links';
 @import 'modules/social-links';
+@import 'modules/theme_switch';
 
 @import 'states/navigation';
 @import 'states/pagination';

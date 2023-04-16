@@ -42,5 +42,48 @@ jQuery(function(){
 		}, 'xml');
 
 	});
+	const toggle_switch = jQuery('.theme.switch input[type="checkbox"]');
+	const match_media_pref_light = window.matchMedia('(prefers-color-scheme: light)');
+	const current_theme = localStorage.getItem('theme');
+	const root_element = jQuery(':root');
 
+	if (current_theme) {
+		root_element.attr('data-theme', current_theme);
+		if (current_theme === 'light') {
+			toggle_switch.prop('checked', true);
+		}
+	}
+	else if (match_media_pref_light.matches) {
+		toggle_switch.prop('checked', true).trigger('change');
+	}
+	else {
+		toggle_switch.prop('checked', false).trigger('change');
+	}
+	function set_indicators(type) {
+		root_element.attr('data-theme', type);
+		localStorage.setItem('theme', type);
+	}
+	function switch_theme(e) {
+		let new_theme = 'dark';
+		if (e.target.checked) {
+			new_theme = 'light';
+		}
+		set_indicators(new_theme);
+	}
+	function on_system_theme_change(e) {
+		let data_theme = root_element.attr('data-theme');
+		if (e.matches && data_theme === 'light' || !e.matches && data_theme === 'dark') {
+			return;
+		}
+		if (e.matches) {
+			set_indicators('light');
+			toggle_switch.prop('checked', true).trigger('change');
+		}
+		else {
+			set_indicators('dark');
+			toggle_switch.prop('checked', false).trigger('change');
+		}
+	}
+	toggle_switch.on('change', switch_theme);
+	match_media_pref_light.addEventListener('change', on_system_theme_change);
 });

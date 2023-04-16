@@ -86,7 +86,7 @@ assets:
   digest: true
   caching:
     enabled: true
-    path: ".jekyll-cache/assets"
+    path: ".sass-cache/assets"
     type: file
   sources:
     - _assets
