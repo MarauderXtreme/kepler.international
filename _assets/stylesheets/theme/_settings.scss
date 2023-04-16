@@ -70,11 +70,11 @@ $label-color: var(--kepler-blue-colour);
 // 27. Pagination
 // --------------
 
-$pagination-item-color: var(--primary-colour);
+$pagination-item-color: var(--kepler-orange-colour);
 $pagination-item-background-hover: var(--secondary-colour-light);
-$pagination-item-background-current: var(--primary-colour);
+$pagination-item-background-current: var(--kepler-orange-colour);
 $pagination-item-color-current: var(--secondary-colour);
-$pagination-item-color-disabled: var(--dark-grey-colour);
+$pagination-item-color-disabled: var(--light-grey-colour);
 
 // 49. Switch
 // ----------
