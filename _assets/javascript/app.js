@@ -58,7 +58,7 @@ jQuery(function(){
 		localStorage.setItem('theme', type);
 	}
 	function switch_theme(e) {
-		let new_theme = 'dark;'
+		let new_theme = 'dark';
 		if (e.target.checked) {
 			new_theme = 'light';
 		}
