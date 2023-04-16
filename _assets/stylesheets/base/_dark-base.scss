@@ -1,4 +1,8 @@
 @mixin base-colours-dark {
+	--kepler-orange-colour: #FF6600;
+	--kepler-orange-colour-light: #ff7b24;
+	--kepler-blue-colour: #00050f;
+	--kepler-blue-colour-light: #000d28;
 	--primary-colour: #FF6600;
 	--primary-colour-light: #ff7419;
 	--secondary-colour: #00050f;
@@ -25,7 +29,7 @@
 	--black-colour: #0a0a0a;
 	--white-colour: #fefefe;
 	--star-colour: #ffffff;
-	--claim-colour: #ffdd55;
+	--claim-colour: #ff7b24;
 	--social-fill-colour: #ffffff;
 	--twitter-colour: #1DA1F2;
 	--github-colour: #181717;
