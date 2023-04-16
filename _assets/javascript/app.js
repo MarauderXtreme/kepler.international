@@ -49,9 +49,12 @@ jQuery(function(){
 
 	if (current_theme) {
 		root_element.attr('data-theme', current_theme);
-		if (current_theme === 'light' || match_media_pref_light.matches) {
+		if (current_theme === 'light') {
 			toggle_switch.prop('checked', true).trigger('change');
 		}
+	}
+	else if (match_media_pref_light.matches) {
+		toggle_switch.prop('checked', true).trigger('change');
 	}
 	function set_indicators(type) {
 		root_element.attr('data-theme', type);
