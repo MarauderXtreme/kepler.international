@@ -24,7 +24,7 @@ Some of those magic tools are:
     Each icon there is from simpleicons.
 - Beautiful fonts
   - [Fira Sans](https://github.com/bBoxType/FiraSans)
-  - [Fira Code](https://github.com/tonsky/FiraCode)
+  - [FiraGO](https://github.com/tonsky/FiraGO)
   - [Unifraktur Maguntia](http://unifraktur.sourceforge.net/de/maguntia.html)
 
 This is as good as a rebuilt of my old Drupal website.

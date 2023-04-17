@@ -90,9 +90,6 @@ assets:
     type: file
   sources:
     - _assets
-    - _assets/fonts/Fira_Code/static
-    - _assets/fonts/Fira_Sans/
-    - _assets/fonts/UnifrakturMaguntia
     - _assets/pictures
     - _assets/images
     - _assets/javascript
@@ -102,6 +99,9 @@ assets:
     - node_modules/foundation-sites/dist/js/plugins
     - node_modules/foundation-sites/scss
     - node_modules/foundation-sites/_vendor
+    - node_modules/firacode/distr
+    - node_modules/@fontsource/firago
+    - node_modules/@fontsource/unifrakturmaguntia
   plugins:
     css: { autoprefixer: {}}
     img:
