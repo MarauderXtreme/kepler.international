@@ -1,0 +1,5 @@
+@supports (font-variation-settings: normal) {
+	kbd, code {
+		font-family: "Fira Code VF", $font-family-monospace;
+	}
+}

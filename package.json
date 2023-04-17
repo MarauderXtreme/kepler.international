@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Kepler International Theme",
   "dependencies": {
+    "@fontsource/firago": "latest",
+    "@fontsource/unifrakturmaguntia": "latest",
+    "firacode": "latest",
     "foundation-sites": "^6.7.5",
     "jquery": ">=3.6.4",
     "motion-ui": "latest",
