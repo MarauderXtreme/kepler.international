@@ -1,12 +1,20 @@
 ---
 layout: default
 ---
-
+{% if page.special_styling %}
+	{% assign special_styling = page.special_styling %}
+{% elsif post.special_styling %}
+	{% assign special_styling = post.special_styling %}
+{% endif %}
 <!-- Begin layout/post -->
 <main id="main-content">
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x">
+			{% if special_styling %}
+			<article class="cell {{ special_styling }}">
+			{% else %}
 			<article class="cell">
+			{% endif %}
 				<h1>{{ page.title }}</h1>
 				{% include post-meta-information.html %}
 				{{ content }}
