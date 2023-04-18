@@ -16,7 +16,11 @@ layout: page
 	{% else %}
 		{% assign desc = post.excerpt %}
 	{% endif %}
+	{% if post.special_styling %}
+	<section class="{{ post.special_styling }}">
+	{% else %}
 	<section>
+		{% endif %}
 		{{ desc | replace: '<h5', '<h6' | replace: '</h5>', '</h6>' | replace: '<h4', '<h5' | replace: '</h4>', '</h5>' | replace: '<h3', '<h4' | replace: '</h3>', '</h4>' | replace: '<h2', '<h3' | replace: '</h2>', '</h3>' | truncate: site.teaser-length, '…' }}
 		<p class="read-more">
 			<a href="{{ post.url | relative_url }}">{% t global.more %}</a>

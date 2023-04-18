@@ -1,12 +1,20 @@
 ---
 layout: default
 ---
-
+{% if page.special_styling %}
+	{% assign special_styling = page.special_styling %}
+{% elsif post.special_styling %}
+	{% assign special_styling = post.special_styling %}
+{% endif %}
 <!-- Begin layout/page -->
 <main id="main-content">
 	<div class="grid-container">
 		<article class="grid-x grid-padding-x">
-			<section class="cell">
+			{% if special_styling %}
+			<section class="cell {{ special_styling }}">
+			{% else %}
+				<section class="cell">
+			{% endif %}
 				{{ content }}
 			</section>
 		</article>
