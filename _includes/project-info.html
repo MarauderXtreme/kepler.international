@@ -12,33 +12,33 @@
 	{% elsif info[0] == "state" %}
 	{% assign state = info[1] %}
 	{% assign state_colour = site.data.project-state-colours[state] %}
-	<!-- Begin state -->
+	<!-- Begin status -->
 	<li>
-		<img	src="https://img.shields.io/badge/state-{{ info[1] }}-{{ state_colour }}.svg?style=for-the-badge"
-						alt="Two-sided icon that reads state {{ info[1] }} with state on one and {{ info[1] }} beeing on the other side."
-						title="{{ page.namespace}} state is {{ info[0] | capitalize] }}"
+		<img	src="https://img.shields.io/badge/status-{{ info[1] }}-{{ state_colour }}.svg?style=for-the-badge"
+						alt="Two-sided icon that reads status {{ info[1] }} with status on one and {{ info[1] }} beeing on the other side."
+						title="{{ page.namespace}} status is {{ info[0] | capitalize] }}"
 						class="svg"
 			/>
 	</li>
-	<!-- End state -->
+	<!-- End status -->
 	{% elsif info[0] == "url" %}
-	<!-- Begin website -->
+	<!-- Begin homepage -->
 	<li>
 		<a href="{{ info[1] }}">
 			<img	src="https://img.shields.io/badge/homepage-{{ page.namespace }}-ff6600.svg?style=for-the-badge"
-						alt="Two-sided icon that reads website {{ page.namespace }} with website on one and {{ page.namespace }} beeing on the other side."
+						alt="Two-sided icon that reads homepage {{ page.namespace }} with homepage on one and {{ page.namespace }} beeing on the other side."
 						title="{{ page.namespace }} homepage"
 						class="svg"
 			/>
 		</a>
 	</li>
-	<!-- End website -->
+	<!-- End   homepage -->
 	{% else %}
 	<!-- Begin generic project info -->
 	<li>
 		<a href="{{ info[1] }}">
 			<img	src="https://img.shields.io/badge/{{ info[0] }}-{{ page.namespace }}-ff6600?style=for-the-badge&logo={{ info[0] }}&logoColor=00050f"
-						alt="{{ info[0] | capitalize] }} con with the text {{ page.namespace }} next to it."
+						alt="{{ info[0] | capitalize] }} icon with the text {{ page.namespace }} next to it."
 						title="{{ page.namespace }} {{ info[0] | capitalize }}"
 						class="svg"
 			/>
@@ -57,7 +57,7 @@
 	{% if language == "gnubash" %}
 	<li>
 		<img	src="https://img.shields.io/badge/shell-ff6600.svg?style=for-the-badge&logo={{ language }}&logoColor=00050f"
-					alt="{{ language | capitalize] }} Icon with the text Shell next to it."
+					alt="{{ language | capitalize] }} icon with the text Shell next to it."
 					title="Shell"
 					class="svg"
 		/>
@@ -66,7 +66,7 @@
 	{% endif %}
 	<li>
 		<img	src="https://img.shields.io/badge/{{ language }}-ff6600.svg?style=for-the-badge&logo={{ language }}&logoColor=00050f"
-					alt="{{ language | capitalize] }} Icon with the text {{ language | capitalize] }} next to it."
+					alt="{{ language | capitalize] }} icon with the text {{ language | capitalize] }} next to it."
 					title="{{ language | capitalize] }}"
 					class="svg"
 		/>
