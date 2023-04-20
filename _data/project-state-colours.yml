@@ -1,0 +1,7 @@
+---
+
+active: success
+under-development: green
+finished: informational
+discontinued: inactive
+deferred: yellow
