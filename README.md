@@ -22,9 +22,11 @@ Some of those magic tools are:
 - [simpleicons](https://simpleicons.org/)
   - I have a list of my social medias in the footer of the website.
     Each icon there is from simpleicons.
+- [shields.io](https://shields.io/)
+  - I use this for the project quick info and this itself uses simpleicons
 - Beautiful fonts
-  - [Fira Sans](https://github.com/bBoxType/FiraSans)
-  - [FiraGO](https://github.com/tonsky/FiraGO)
+  - [FiraGO](https://github.com/bBoxType/FiraGO)
+  - [FiraCode](https://github.com/tonsky/FiraCode)
   - [Unifraktur Maguntia](http://unifraktur.sourceforge.net/de/maguntia.html)
 
 This is as good as a rebuilt of my old Drupal website.
