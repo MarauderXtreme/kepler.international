@@ -11,9 +11,9 @@
 		<li class="menu-text">
 			<span class="label">
 			{% if project.languages.size == 1 %}
-				{{ page.namespace }} Language:
+				{{ page.namespace }} {% t project-info.language %}:
 			{% else %}
-				{{ page.namespace }} Languages:
+				{{ page.namespace }} {% t project-info.language %}:
 			{% endif %}
 			</span>
 		</li>
@@ -21,7 +21,7 @@
 		{% if language == "gnubash" %}
 		<li>
 			<img	src="https://img.shields.io/badge/shell-ff6600.svg?style=for-the-badge&logo={{ language }}&logoColor=00050f"
-						alt="{{ language | capitalize] }} icon with the text Shell next to it."
+						alt="{{ language | capitalize] }} {% t project-info.icon-with %} Shell {% t project-info.next-to %}."
 						title="Shell"
 						class="svg"
 			/>
@@ -30,7 +30,7 @@
 		{% endif %}
 		<li>
 			<img	src="https://img.shields.io/badge/{{ language }}-ff6600.svg?style=for-the-badge&logo={{ language }}&logoColor=00050f"
-						alt="{{ language | capitalize] }} icon with the text {{ language | capitalize] }} next to it."
+						alt="{{ language | capitalize] }} {% t project-info.icon-with %} {{ language | capitalize] }} {% t project-info.next-to %}."
 						title="{{ language | capitalize] }}"
 						class="svg"
 			/>
@@ -43,16 +43,16 @@
 		<li class="menu-text">
 			<span class="label">
 			{% if project.tools.size == 1 %}
-				{{ page.namespace }} Tool:
+				{{ page.namespace }} {% t project-info.tool %}:
 			{% else %}
-				{{ page.namespace }} Tools:
+				{{ page.namespace }} {% t project-info.tools %}:
 			{% endif %}
 			</span>
 		</li>
 		{% for tool in project.tools %}
 		<li>
 			<img	src="https://img.shields.io/badge/{{ tool }}-ff6600.svg?style=for-the-badge&logo={{ tool }}&logoColor=00050f"
-						alt="{{ tool | capitalize] }} Icon with the text {{ tool | capitalize] }} next to it."
+						alt="{{ tool | capitalize] }} {% t project-info.icon-with %} {{ tool | capitalize] }} {% t project-info.next-to %}."
 						title="{{ tool | capitalize] }}"
 						class="svg"
 			/>
@@ -67,11 +67,12 @@
 		{% elsif info[0] == "state" %}
 		{% assign state = info[1] %}
 		{% assign state_colour = site.data.project-state-colours[state] %}
+		{% assign t_status = site.translations[site.lang].project-info.states[state] %}
 		<!-- Begin status -->
 		<li class="menu-text">
-			<img	src="https://img.shields.io/badge/status-{{ info[1] }}-{{ state_colour }}.svg?style=for-the-badge&labelColor=FF6600"
-						alt="Two-sided icon that reads status {{ info[1] }} with status on one and {{ info[1] }} beeing on the other side."
-						title="{{ page.namespace}} status is {{ info[0] | capitalize] }}"
+			<img	src="https://img.shields.io/badge/status-{{ t_status }}-{{ state_colour }}.svg?style=for-the-badge&labelColor=FF6600"
+						alt="{% t project-info.two-sided-icon %} {% t project-info.status %} {{ t_status }} {% t project-info.with %} {% t project-info.status %} {% t project-info.on-one %} {{ info[1] }} {% t project-info.other-side %}."
+						title="{{ page.namespace}} {% t project-info.status %} {% t project-info.is %} {{ t_status }}"
 						class="svg"
 			/>
 		</li>
@@ -81,8 +82,8 @@
 		<li>
 			<a href="{{ info[1] }}">
 				<img	src="https://img.shields.io/badge/homepage-{{ page.namespace }}-ff6600.svg?style=for-the-badge"
-							alt="Two-sided icon that reads homepage {{ page.namespace }} with homepage on one and {{ page.namespace }} beeing on the other side."
-							title="{{ page.namespace }} homepage"
+							alt="{% t project-info.two-sided-icon %} {% t project-info.homepage %} {{ page.namespace }} {% t project-info.with %} {% t project-info.homepage %} {% t project-info.on-one %} {{ page.namespace }} {% t project-info.other-side %}."
+							title="{{ page.namespace }} {% t project-info.homepage %}"
 							class="svg"
 				/>
 			</a>
@@ -93,7 +94,7 @@
 		<li>
 			<a href="{{ info[1] }}">
 				<img	src="https://img.shields.io/badge/{{ info[0] }}-{{ page.namespace }}-ff6600?style=for-the-badge&logo={{ info[0] }}&logoColor=ff6600"
-							alt="{{ info[0] | capitalize] }} icon with the text {{ page.namespace }} next to it."
+							alt="{{ info[0] | capitalize] }} {% t project-info.icon-with %} {{ page.namespace }} {% t project-info.next-to %}."
 							title="{{ page.namespace }} {{ info[0] | capitalize }}"
 							class="svg"
 				/>
