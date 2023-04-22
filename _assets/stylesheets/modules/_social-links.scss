@@ -1,46 +1,94 @@
-.social-links {
+////
+/// @group social-links
+////
+
+/// Default fill colour.
+/// @type Color
+$social-fill: $white !default;
+
+/// Default alternate fill colour.
+/// @type Color
+$social-fill-alt: $black !default;
+
+/// Background color lightness on hover for social links.
+/// @type Number
+$social-background-hover-lightness: 20% !default;
+
+/// Default colours and names of socials
+/// @type Map
+$socials:	(
+	rss: #FFA500,
+) !default;
+
+/// Default background colour for social link.
+/// @type Color
+$social-background: map-get($foundation-palette, primary) !default;
+
+/// Background colour on hover for social-links.
+/// @type Color
+$social-background-hover: scale-color($social-background, $lightness: 15%) !default;
+
+/// Set visual style of a social-link.
+/// @param {Color} $background [$social-background] - Background colour of a social-link.
+@mixin social-link-style(
+	$background: $social-background,
+	$background-hover-lightness: $social-background-hover-lightness
+) {
+	$hover: scale-color($background, $lightness: abs($background-hover-lightness));
+	$invert-hover: scale-color($background, $lightness: abs($background-hover-lightness) * -1);
+	$background-hover: $invert-hover;
+	$fill: color-pick-contrast($background, ($social-fill, $social-fill-alt));
+	$hover-fill: color-pick-contrast($hover, ($social-fill, $social-fill-alt));
+	$invert-hover-fill: color-pick-contrast($invert-hover, ($social-fill, $social-fill-alt));
+
+	@if $fill == $social-fill{
+		@if $invert-hover-fill == $social-fill and $invert-hover > #333333 {
+			$background-hover: $invert-hover;
+		}	@else if $hover-fill == $social-fill {
+			$background-hover: $hover;
+		}
+	}	@else if $fill == $social-fill-alt or $fill == $social-fill and ($hover-fill == $social-fill-alt or $invert-hover-fill == $social-fill-alt) {
+		$fill: $background;
+		$background: $social-fill-alt;
+		$hover: scale-color($background, $lightness: abs($background-hover-lightness));
+		$invert-hover: scale-color($background, $lightness: abs($background-hover-lightness + 20) * -1);
+		@if color-contrast($fill, $hover) >= 3 {
+			$background-hover: $hover;
+		} @else {
+			$background-hover: $invert-hover;
+		}
+	} @else {
+		@error 'Your colours contrasts within the social-link are not sufficient';
+	}
+
+	background-color: $background;
+	&:hover, &:focus {
+		background-color: $background-hover;
+		transition: background-color 0.25s ease-out;
+	}
 	svg {
-		fill: var(--social-fill-colour);
-		height: 2em;
-		width: 2em;
-
-	}
-	a {
-		display: inline-block;
-		padding: .4rem .5rem;
-		line-height: 1;
-
-	}
-	.twitter {
-		background-color: var(--twitter-colour);
-
-	}
-	.github {
-		background-color: var(--github-colour);
-
-	}
-	.gitlab {
-		background-color: var(--gitlab-colour);
-
-	}
-	.steam {
-		background-color: var(--steam-colour);
-
-	}
-	.twitch {
-		background-color: var(--twitch-colour);
-
-	}
-	.spotify {
-		background-color: var(--spotify-colour);
-
-	}
-	.facebook {
-		background-color: var(--facebook-colour);
-
-	}
-	.rss {
-		background-color: var(--rss-colour);
-
+		fill: $fill;
 	}
 }
+
+@mixin social-link {
+	.social-links {
+		svg {
+			height: 2em;
+			width: 2em;
+		}
+		a {
+			display: inline-block;
+			padding: .4rem .5rem;
+			line-height: 1;
+			@include social-link-style;
+		}
+		@each $name, $colour in $socials {
+			.#{$name} {
+				@include social-link-style($colour);
+			}
+		}
+	}
+}
+
+@include social-link;
