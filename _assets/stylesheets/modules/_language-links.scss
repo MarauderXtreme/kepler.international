@@ -6,6 +6,7 @@
 	&.active svg,
 	&:hover svg {
 		filter: none;
+		transition: filter 0.25s ease-out;
 	}
 }
 span.untranslated.language {
