@@ -1,5 +1,5 @@
 @supports (font-variation-settings: normal) {
-	kbd, code {
+	kbd, code, .breadcrumbs li:not(:last-child)::after {
 		font-family: "Fira Code VF", $font-family-monospace;
 	}
 }
