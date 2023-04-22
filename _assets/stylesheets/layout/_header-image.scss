@@ -1,22 +1,23 @@
 #header-image {
 	max-width: 75rem;
 	margin: 0 0 $global-margin 0;
-	
+
 	g#space rect {
 		fill-opacity: 0 !important;
 		fill: unset !important;
-	
+
 	}
 	g#stars path {
 		fill: var(--star-colour) !important;
-	
+
 	}
 	g#claim-stars path {
 		fill: var(--star-colour) !important;
-	
+
 	}
 	g#claim path {
 		stroke: var(--claim-colour) !important;
-	
+		stroke-width: var(--claim-width) !important;
+
 	}
 }
