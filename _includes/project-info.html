@@ -61,23 +61,21 @@
 	</ul>
 	{% endif %}
 	<ul class="generic simple menu">
-		{% for info in project %}
-		{% if info[0] == "languages" or info[0] == "tools" %}
-		{% continue %}
-		{% elsif info[0] == "state" %}
-		{% assign state = info[1] %}
+		{% assign state = project.state %}
 		{% assign state_colour = site.data.project-state-colours[state] %}
 		{% assign t_status = site.translations[site.lang].project-info.states[state] %}
 		<!-- Begin status -->
 		<li class="menu-text">
 			<img	src="https://img.shields.io/badge/status-{{ t_status }}-{{ state_colour }}.svg?style=for-the-badge&labelColor=FF6600"
-						alt="{% t project-info.two-sided-icon %} {% t project-info.status %} {{ t_status }} {% t project-info.with %} {% t project-info.status %} {% t project-info.on-one %} {{ info[1] }} {% t project-info.other-side %}."
+						alt="{% t project-info.two-sided-icon %} {% t project-info.status %} {{ t_status }} {% t project-info.with %} {% t project-info.status %} {% t project-info.on-one %} {{ state }} {% t project-info.other-side %}."
 						title="{{ page.namespace}} {% t project-info.status %} {% t project-info.is %} {{ t_status }}"
 						class="svg"
 			/>
 		</li>
 		<!-- End status -->
-		{% elsif info[0] == "url" %}
+		{% for info in project %}
+		{% unless info[0] == "languages" or info[0] == "tools" or info[0] == "state" %}
+		{% if info[0] == "url" %}
 		<!-- Begin homepage -->
 		<li>
 			<a href="{{ info[1] }}">
@@ -102,6 +100,7 @@
 		</li>
 		<!-- End   generic project info -->
 		{% endif %}
+		{% endunless %}
 		{% endfor %}
 	</ul>
 </div>
