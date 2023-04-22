@@ -4,14 +4,44 @@
 	}
 	svg {
 		filter: none;
-		g {
-			font-family: $font-family-monospace;
+		g text {
+			font-family: $body-font-family !important;
 		}
 	}
-	&.generic li:first-of-type {
-		margin-left: 1rem;
+	li {
+		line-height: 1;
+		&:first-of-type {
+			margin-left: initial;
+		}
 	}
-	li:first-of-type {
-		margin-left: initial;
+	a svg {
+		rect{
+			stroke-width: 2px;
+			stroke: #FF6600;
+			&:first-of-type {
+				fill: none;
+			}
+		}
+		text:first-of-type {
+			fill: #FF6600;
+		}
+		&:hover, &:active {
+			rect {
+				transition: stroke 0.25s ease-out;
+				stroke: #803300;
+				&:last-of-type {
+					transition: fill 0.25s ease-out;
+					fill: #803300;
+				}
+			}
+			text:first-of-type {
+				transition: fill 0.25s ease-out;
+				fill: #803300;
+			}
+			text:last-of-type {
+				transition: fill 0.25s ease-out;
+				fill: #CACACA;
+			}
+		}
 	}
 }
