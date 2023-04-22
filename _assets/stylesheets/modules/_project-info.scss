@@ -1,5 +1,12 @@
 .project-info {
-	img, svg {
+	img {
+		height: 1.6rem;
+		&:hover, &:active {
+			filter: brightness(50%) contrast(150%) saturate(60%);
+			transition: filter 0.25s ease-out;
+		}
+	}
+	svg {
 		height: 1.7rem;
 	}
 	svg {
