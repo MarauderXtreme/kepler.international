@@ -22,10 +22,14 @@
 	{% endif %}
 	</p>
 	{% if tags %}
-	<p class="categories">
-		<span class="label">{% t titles.pages.categories %}</span>
+	<ul class="simple categories menu">
+		<li class="menu-text">
+			<span class="label">{% t titles.pages.categories %}</span>
+		</li>
 		{% for tag in tags %}
-		<a class="tiny hollow button" href="{% tl categories %}/{{ tag }}">{% t titles.tags.{{ tag }} %}</a>
+		<li>
+			<a class="small hollow button" href="{% tl categories %}/{{ tag }}">{% t titles.tags.{{ tag }} %}</a>
+		</li>
 		{% endfor %}
 	</p>
 	{% endif %}
