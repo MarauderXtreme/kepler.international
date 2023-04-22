@@ -2,14 +2,16 @@ jQuery(document).foundation();
 jQuery(function(){
 
 	jQuery('img.svg').each(function(){
-		var $img = jQuery(this);
-		var img_id = $img.attr('id');
-		var img_class = $img.attr('class');
-		var img_url = $img.attr('src');
+		const $img = jQuery(this);
+		const img_id = $img.attr('id');
+		const img_class = $img.attr('class');
+		const img_url = $img.attr('src');
+		const img_alt = $img.attr('alt');
+		const img_title = $img.attr('title');
 
 		jQuery.get(img_url, function(data) {
 			// Get the SVG tag, ignore the rest
-			var $svg = jQuery(data).find('svg');
+			let $svg = jQuery(data).find('svg');
 
 			// Add replaced image's ID to the new SVG
 			if(typeof img_id !== 'undefined') {
@@ -27,8 +29,8 @@ jQuery(function(){
 			$img.replaceWith($svg);
 
 			// Get width and height for viewBox
-			var svg_width = $svg.attr('width');
-			var svg_height = $svg.attr('height');
+			const svg_width = $svg.attr('width');
+			const svg_height = $svg.attr('height');
 
 			// Remove problematic width and height
 			$svg.removeAttr('width');
@@ -36,7 +38,15 @@ jQuery(function(){
 
 			// Apply viewBox to svg
 			if(typeof svg_width !== 'undefined' && typeof svg_height !== 'undefined') {
-				$svg = $svg.attr('viewBox', '0 0 ' + svg_width + ' ' + svg_height);
+				$svg.attr('viewBox', '0 0 ' + svg_width + ' ' + svg_height);
+			}
+
+			// Take img alt as aria-label instead of svg aria-label
+			if(typeof img_alt !== 'undefined') {
+				$svg.attr('aria-label', img_alt);
+			}
+			if(typeof img_title !== 'undefined') {
+				$svg.find('title').text(img_title);
 			}
 
 		}, 'xml');

@@ -5,5 +5,5 @@
 }
 
 .breadcrumbs li:not(:last-child)::after {
-	font-family: 'Fira Code', $body-font-family;
+	font-family: $body-font-family;
 }

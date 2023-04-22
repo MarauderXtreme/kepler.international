@@ -7,11 +7,14 @@ a.external-link {
 	}
 }
 
-.social-links a.external-link {
-	&:after {
-		content: initial;
-		display: initial;
-		height: initial;
-		width: initial;
+.social-links,
+.project-info {
+ 	a.external-link {
+		&:after {
+			content: initial;
+			display: initial;
+			height: initial;
+			width: initial;
+		}
 	}
 }

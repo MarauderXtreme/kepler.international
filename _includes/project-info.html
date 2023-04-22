@@ -1,0 +1,108 @@
+{% if page.project %}
+	{% assign project = page.project %}
+{% elsif post.project %}
+	{% assign project = post.project %}
+{% endif %}
+{% if project %}
+<!-- Begin include/project-info -->
+{% if project.languages %}
+<div class="project-info">
+	<ul class="language simple menu">
+		<li class="menu-text">
+			<span class="label">
+			{% if project.languages.size == 1 %}
+				{{ page.namespace }} {% t project-info.language %}:
+			{% else %}
+				{{ page.namespace }} {% t project-info.language %}:
+			{% endif %}
+			</span>
+		</li>
+		{% for language in project.languages %}
+		{% if language == "gnubash" %}
+		<li>
+			<img	src="https://img.shields.io/badge/shell-ff6600.svg?style=for-the-badge&logo={{ language }}&logoColor=00050f"
+						alt="{{ language | capitalize] }} {% t project-info.icon-with %} Shell {% t project-info.next-to %}."
+						title="Shell"
+						class="svg"
+			/>
+		</li>
+		{% continue %}
+		{% endif %}
+		<li>
+			<img	src="https://img.shields.io/badge/{{ language }}-ff6600.svg?style=for-the-badge&logo={{ language }}&logoColor=00050f"
+						alt="{{ language | capitalize] }} {% t project-info.icon-with %} {{ language | capitalize] }} {% t project-info.next-to %}."
+						title="{{ language | capitalize] }}"
+						class="svg"
+			/>
+		</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+	{% if project.tools %}
+	<ul class="tool simple menu">
+		<li class="menu-text">
+			<span class="label">
+			{% if project.tools.size == 1 %}
+				{{ page.namespace }} {% t project-info.tool %}:
+			{% else %}
+				{{ page.namespace }} {% t project-info.tools %}:
+			{% endif %}
+			</span>
+		</li>
+		{% for tool in project.tools %}
+		<li>
+			<img	src="https://img.shields.io/badge/{{ tool }}-ff6600.svg?style=for-the-badge&logo={{ tool }}&logoColor=00050f"
+						alt="{{ tool | capitalize] }} {% t project-info.icon-with %} {{ tool | capitalize] }} {% t project-info.next-to %}."
+						title="{{ tool | capitalize] }}"
+						class="svg"
+			/>
+		</li>
+		{% endfor %}
+	</ul>
+	{% endif %}
+	<ul class="generic simple menu">
+		{% assign state = project.state %}
+		{% assign state_colour = site.data.project-state-colours[state] %}
+		{% assign t_status = site.translations[site.lang].project-info.states[state] %}
+		<!-- Begin status -->
+		<li class="menu-text">
+			<img	src="https://img.shields.io/badge/status-{{ t_status }}-{{ state_colour }}.svg?style=for-the-badge&labelColor=FF6600"
+						alt="{% t project-info.two-sided-icon %} {% t project-info.status %} {{ t_status }} {% t project-info.with %} {% t project-info.status %} {% t project-info.on-one %} {{ state }} {% t project-info.other-side %}."
+						title="{{ page.namespace}} {% t project-info.status %} {% t project-info.is %} {{ t_status }}"
+						class="svg"
+			/>
+		</li>
+		<!-- End status -->
+		{% for info in project %}
+		{% unless info[0] == "languages" or info[0] == "tools" or info[0] == "state" %}
+		{% if info[0] == "url" %}
+		<!-- Begin homepage -->
+		<li>
+			<a href="{{ info[1] }}">
+				<img	src="https://img.shields.io/badge/homepage-{{ page.namespace }}-ff6600.svg?style=for-the-badge"
+							alt="{% t project-info.two-sided-icon %} {% t project-info.homepage %} {{ page.namespace }} {% t project-info.with %} {% t project-info.homepage %} {% t project-info.on-one %} {{ page.namespace }} {% t project-info.other-side %}."
+							title="{{ page.namespace }} {% t project-info.homepage %}"
+							class="svg"
+				/>
+			</a>
+		</li>
+		<!-- End   homepage -->
+		{% else %}
+		<!-- Begin generic project info -->
+		<li>
+			<a href="{{ info[1] }}">
+				<img	src="https://img.shields.io/badge/{{ info[0] }}-{{ page.namespace }}-ff6600?style=for-the-badge&logo={{ info[0] }}&logoColor=ff6600"
+							alt="{{ info[0] | capitalize] }} {% t project-info.icon-with %} {{ page.namespace }} {% t project-info.next-to %}."
+							title="{{ page.namespace }} {{ info[0] | capitalize }}"
+							class="svg"
+				/>
+			</a>
+		</li>
+		<!-- End   generic project info -->
+		{% endif %}
+		{% endunless %}
+		{% endfor %}
+	</ul>
+</div>
+<!-- End   include/project-info -->
+{% endif %}

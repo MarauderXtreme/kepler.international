@@ -1,3 +1,8 @@
-.post-meta .button {
+.post-meta {
+	.button {
 	margin-bottom: 0;
+	}
+	.simple.menu a.button {
+		padding: $button-padding;
+	}
 }

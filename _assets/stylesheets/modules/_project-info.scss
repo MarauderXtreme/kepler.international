@@ -1,0 +1,59 @@
+.project-info {
+	img {
+		height: 1.6rem;
+	}
+
+	svg {
+		height: 1.7rem;
+	}
+	svg {
+		filter: none;
+		g text {
+			font-family: $body-font-family !important;
+		}
+	}
+	li {
+		line-height: 1;
+		&:first-of-type {
+			margin-left: initial;
+		}
+	}
+	a {
+		img {
+			&:hover, &:active {
+				filter: brightness(50%) contrast(150%) saturate(60%);
+				transition: filter 0.25s ease-out;
+			}
+		}
+		svg {
+			rect{
+				stroke-width: 2px;
+				stroke: $primary-color;
+				&:first-of-type {
+					fill: none;
+				}
+			}
+			text:first-of-type {
+				fill: $primary-color;
+			}
+			&:hover, &:active {
+				rect {
+					transition: stroke 0.25s ease-out;
+					stroke: scale-color($primary-color, $lightness: $button-hollow-hover-lightness);
+					&:last-of-type {
+						transition: fill 0.25s ease-out;
+						fill: scale-color($primary-color, $lightness: $button-hollow-hover-lightness);
+					}
+				}
+				text:first-of-type {
+					transition: fill 0.25s ease-out;
+					fill: scale-color($primary-color, $lightness: $button-hollow-hover-lightness);
+				}
+				text:last-of-type {
+					transition: fill 0.25s ease-out;
+					fill: $medium-gray;
+				}
+			}
+		}
+	}
+}
