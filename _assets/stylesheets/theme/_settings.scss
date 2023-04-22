@@ -50,6 +50,11 @@ $breadcrumbs-item-separator-item: '->';
 $breadcrumbs-item-separator-item-rtl: '<-';
 $breadcrumbs-item-separator-color: var(--medium-grey-colour);
 
+// 11. Button
+// ----------
+
+$button-padding: 0.45em 0.8em;
+
 // 13. Callout
 // -----------
 
@@ -60,12 +65,6 @@ $callout-background: "secondary";
 $callout-border: 0.15em solid rgba(var(--primary-colour-rgba), 0.6);
 $callout-font-color: var(--white-colour);
 $callout-font-color-alt: var(--secondary-colour);
-
-// 21. Label
-// ---------
-
-$label-background: var(--kepler-orange-colour);
-$label-color: var(--kepler-blue-colour);
 
 // 27. Pagination
 // --------------
