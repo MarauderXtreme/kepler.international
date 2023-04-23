@@ -11,7 +11,7 @@ tags: administration encryption website
 
 Can you remember my blog post to the [net of the future][net-future]?
 
-[net-future]: /blog/netz-zukunft
+[net-future]: /en/blog/net-future
 
 ## I am one of the chosen ones
 
@@ -25,7 +25,7 @@ I applied with [kepler.international][kepler] and [git.kepler.international][git
 With that only those two domains are covered by a certificate.
 I hope that I can cover more domains later.
 
-[kepler]: https://kepler.international
+[kepler]: https://kepler.international/en/
 [git]: https://git.kepler.international
 
 ## Exactly to the right time
