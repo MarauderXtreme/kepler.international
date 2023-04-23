@@ -2,7 +2,6 @@
 namespace: mail-new-tld
 permalink: blog/e-mail-eigener-und-neuer-domainendung
 permalink_en: blog/email-own-and-new-tld
-languages: ["de"]
 category: blog
 tags: everyday-life email crazy-things
 ---
