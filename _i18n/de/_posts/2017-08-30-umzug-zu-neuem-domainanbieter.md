@@ -2,7 +2,6 @@
 namespace: relocate-registrar
 permalink: /blog/umzug-zu-neuem-domainanbieter
 permalink_en: /blog/relocate-to-new-registrar
-languages: ["de"]
 category: blog
 tags: administration dns linux
 ---
