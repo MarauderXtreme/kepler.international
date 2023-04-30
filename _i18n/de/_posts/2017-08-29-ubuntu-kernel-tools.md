@@ -1,11 +1,15 @@
 ---
-namespace: ukt
+namespace: uktools
 permalink: /projects/ubuntu-kernel-tools
 permalink_en: /projects/ubuntu-kernel-tools
 last_modified_at: 2018-08-14T00:00:00.00+02:00
-languages: ["de"]
 category: projects
 tags: software development linux
+project:
+  state: discontinued
+  github: https://github.com/MarauderXtreme/uktools
+  languages:
+    - gnubash
 ---
 
 # Ubuntu Kernel Tools
@@ -60,7 +64,7 @@ Außerdem werde ich wahrscheinlich meinen Fork zu einem eigenständigen Reposito
 Da die Änderungen von Canonical es mittlerweile immer schwieriger machen, das Skript konsistent und robust zu halten, habe ich mich entschieden, dass Projekt einzustellen.
 Es sollte also davon ausgegangen werden, dass das Skript mittlerweile nicht mehr mit der aktuellen Kernel-Struktur funktioniert.
 
-Ich habe nun festgestellt, dass [ukuu][ukuu] auch ein CLI anbietet und die Versions-Überprüfungen wesentlich robuster sind.
+Ich habe nun festgestellt, dass [ukuu][ukuu-site] auch ein CLI anbietet und die Versions-Überprüfungen wesentlich robuster sind.
 Damit kann ich allen nur empfehlen zu ukuu zu wechseln.
 
-[ukuu]: http://www.teejeetech.in/p/ukuu-kernel-upgrade-utility.html
+[ukuu-site]: http://www.teejeetech.in/p/ukuu-kernel-upgrade-utility.html
