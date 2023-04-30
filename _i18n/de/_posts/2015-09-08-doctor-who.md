@@ -3,7 +3,6 @@ namespace: doctor-who
 permalink: /reviews/doctor-who
 permalink_en: /reviews/doctor-who
 last_modified_at: 2017-08-30T00:00:00.00+02:00
-languages: ["de"]
 category: reviews
 tags: pop-culture tv-series
 ---

@@ -1,9 +1,8 @@
 ---
 namespace: vgrspl
 permalink: /projects/videospiel-radio-playlisten
-permalink_en: /projects/videogame-radio-playlisten
+permalink_en: /projects/videogame-radio-playlists
 last_modified_at: 2017-08-30T00:00:00.00+02:00
-languages: ["de"]
 category: projects
 tags: everyday-life music video-games
 ---

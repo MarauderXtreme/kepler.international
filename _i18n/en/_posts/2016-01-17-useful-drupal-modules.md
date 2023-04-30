@@ -6,32 +6,32 @@ category: tutorials
 tags: drupal website
 ---
 
-# Nützliche Drupal-Module
+# Useful Drupal Modules
 
-Auf Arbeit benutzen wir Drupal als CMS für unsere Website Projekte.
-Die Drupal-Welt lebt von ihrer Modularität.
-Mittlerweile gibt es fast nichts mehr, was ein Web-Frontend besitzt, was man nicht mit Drupal realisieren kann.
-Vom einfachen Blog über E-Commerce bis hin zur ERP Lösung kann mit speziellen Modulen alles erreicht werden.
-Zur Zeit gibt es auf [drupal.org][drupal] 32945 Module.
-Einige davon sind sicherlich veraltet, nur noch für Version 6 und älter entwickelt.
-Trotzdem ist es schwierig eine Übersicht über alle wichtigen Module zu behalten.
+We use Drupal as CMS for our website projects at work.
+The Drupal world lives from its modularity.
+By now nearly nothing exists that has a web frontend you cannot realise with Drupal.
+You can create everything with specialised modules from a simple blog over e-commerce up to erp solutions.
+As of writing this there are 32945 modules on [drupal.org][drupal].
+Some of them are probably outdated or only available for version 6 and prior.
+It is nevertheless difficult to keep track of all the important modules.
 
-In diesem Tutorial geht es mir nur um Module, die wirklich für fast jede Installation von Drupal von Vorteil sind.
-Ich werde auf keine Feld-Definitions-Module eingehen und auch keine Inhaltsmodule vorstellen.
-Es soll um Module gehen, die einem die Arbeit mit Drupal erleichtern und verbessern.
-Einige Module gehören auch in die Kategorie "Module die ich schon immer gewollt habe, ohne zu es zu wissen."
+In this tutorial I will only cover modules that are useful for every installation if Drupal.
+I will not introduce modules for field-definitions and no content modules.
+It should be about modules that make working with Drupal easier and better.
+Some of those modules fit in the category "modules I always wanted but never knew".
 
-Einige der Module hängen auch voneinander ab.
-Einige dieser Module stehen auch nur in dieser Liste, da sie von einem Großteil der Module vorrausgesetzt werden, selbst aber fast nie benutzt werden.
-Ich werde diese Liste von Zeit zu updaten und erweitern.
-Vielleicht wird später aus dieser Liste auch ein Profil, welches ich für Drupalinstallationen benutzen werde.
+Some modules depend on each other.
+Some modules are in this list because they are a dependency for many other modules but are themselves seldomly used.
+I will update and extend this list from time to time.
+Maybe this list becomes a profile that I can use for Drupal installations.
 
-Solltet ihr ein Modul kennen, was nicht auf dieser Liste fehlen darf, lasst mich davon wissen.
-Schreibt mir einfach über einen der Kanäle, die im Footer verlinkt sind.
+Please let me know should you know a module that should not be missing on this list.
+Just write me via one of the channels that are linked in the footer.
 
 [drupal]: https://www.drupal.org/project/project_module
 
-## Module die in keiner Installation von Drupal 7 fehlen sollten
+## Modules that should not be missing in any installation if Drupal 7
 
 - [Administration menu](https://www.drupal.org/project/admin_menu)
 - [Administration Views](https://www.drupal.org/project/admin_views)

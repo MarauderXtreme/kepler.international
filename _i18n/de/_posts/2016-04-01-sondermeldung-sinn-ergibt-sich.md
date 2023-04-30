@@ -2,7 +2,6 @@
 namespace: sense-surrenders
 permalink: /blog/sondermeldung-sinn-ergibt-sich
 permalink_en: /blog/breaking-news-sense-surrenders
-languages: ["de"]
 category: blog
 tags: crazy-things
 special_styling: fraktur

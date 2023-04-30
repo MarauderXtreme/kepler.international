@@ -1,8 +1,7 @@
 ---
-namespace: feel-insulted
+namespace: feel-offended
 permalink: /blog/ich-fuehle-mich-beleidigt
-permalink_en: /blog/i-feel-insulted
-languages: ["de"]
+permalink_en: /blog/i-feel-offended
 category: blog
 tags: website
 ---

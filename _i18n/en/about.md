@@ -1,72 +1,80 @@
 # BOfH
 
-Mein Name ist Christoph Kepler.
+My name is CHristoph Kepler.
 
-Ich bin Admin dieser Seite.
-Sie dient mir mehr oder weniger als Drupal-Spielwiese und nebenbei als Möglichkeit meine Schreib- und Sprachskills zu verbessern.
-Mehr dazu in der [Projektbeschreibung][projekt].
+I am in charge of this site.
+It serves me as a container for my sporadic thoughts, storage for things I reuse from time to time and explanations of said things if someone finds them useful too.
+I can improve my writing and language skills while tending to the site.
+Find more about it in the [project description][project].
 
-Was mache ich, wenn ich grade nicht an der Website schraube oder für euch Inhalte erstelle?
+What am I doing if I'm not tinkering on the website or creating new content for you?
 
-- DevOp Engineer
-- IT'ler
-- Web-Developer
-- Gamer
-- Technikenthusiast
-- Linuxfreak
-- Bücherliebhaber (Naja, ich hab jetzt auch ein Kindle)
-- IT-Support für Freunde und Familie
-- Aktives AGDSN-Mitglied
+- DevOp engineer
+- IT
+- web developer
+- gamer
+- tech enthusiast
+- linux freak
+- book lover (well, I got a Kindle now too)
+- IT support for friends and family
+- active member of AG DSN
 
-Meine schulische Laufbahn beginnt 2000 in der Grundschule Schönau-Berzdorf.
+My school career starts in 2000 in the elementary school in Schönau-Berzdorf.
 
-Von 2004 bis 2012 bin ich in Herrnhut auf das Gymi gegangen.
-Dort habe ich auch einen Wechsel der Trägerschaft mitgemacht.
-Ich kann euch sagen, dass war eine ziemliche Angelegenheit.
+From 2004 to 2012 I went to the grammar school in Herrnhut.
+Also experienced a change of sponsorhsip there.
+I can tell you that this was quite something.
 
-Seit 2012 mache ich ein kooperatives Studium an der TU Dresden in Informatik.
-Ich habe von 2012 bis August 2016 bei der [ARTS Deutschland GmbH][arts] in der IT gearbeitet.
-Dort bin ich auch zum ersten Mal mit Drupal in Berührung gekommen.
-Meine 'ganze' Erfahrung habe ich bei der Arbeit an [aircareer.de][aircareer] und bei der Betreuung von [First Aid][first-aid] gesammelt.
-Außerdem hab ich ein paar Module selbst gebaut, die an sich kaum nennenswert aber trotzdem mein ganzer Stolz sind.
+From 2013 to 2019 I studied CompSci at the TU Dresden and from 2012 to 2015 I trained as an IT specialist for application development.
+I worked for [ARTS Deutschland GmbH][arts] in the IT department from 2012 to August 2016.
+This is the first time I cam in contact with Drupal.
+I gathered my 'whole' experience while working on [aircareer.de][aircareer] and maintaining [First Aid][first-aid].
+In this time I created some in-house modules in Drupal.
+Nothing special but I am proud of it.
 
-Von September 2016 arbeite ich bei der [manaTec GmbH][manatec].
-Die IT Abteilung der ARTS hat sich ausgegründet und ist nun eine unabhängige Firma.
+From September 2016 to September 2019 I worked at [manaTec Gmbh][manatec].
+The IT department of the ARTS had spun off and is now an independent company.
+I mostly continued work on the websites of ARTS and their sister and subsidiary companies.
+But timer after time more of those websites were moved to different systems but I got the new project [myonso][myonso] as relaunch for mobile devices which I tended to until the end of my tenure.
 
-Zur Zeit arbeite ich größtenteils an arts.aero.
-Die Website ist dieses Jahr zur ILA erneuert worden.
-Jetzt geschehen einige Nachbereitungen und Anpassungen and neue Anforderungen.
-Weiterhin warte ich aircareer.de.
+In October 2019 I changed to [Tyclipso GmbH][tyclipso] or rather their predecessor and I work their since.
+I have the position of DevOp engineer and look after processes to get code to servers and make them more structured and faster.
+Alongside this I maintain server environments and take care of other IT related topics.
 
-Um mich zu erreichen, klick einfach auf einen der großen bunten Knöpfe am Ende der Seite (okay bis auf den Gelb-Orangenen).
+To contact me you can click one of the big colourful buttons at the bottom if the site
+(okay maybe except for the last one)
 
-[projekt]: /projects/kepler-international
+[project]: /projects/kepler-international
 [arts]: https://www.arts.aero/
 [aircareer]: https://web.archive.org/web/20160131184030/https://www.aircareer.de/
-[firstaid]: http://www.firstaid.eu/
+[first-aid]: https://www.firstaid.eu/
 [manatec]: https://www.manatec.de/
+[myonso]: https://
+[tyclipso]: https://tyclipso.net/
 
-## Warum gerade BOfH als Profilname?
+## Why BOfH as profilename of all things?
 
-Nun ja.
-Ich wurde von einem ehemaligen Ausbilder auf diese Geschichten hingewiesen und habe sie mir daraufhin zu Gemüte geführt.
-Diese Geschichten sind einfach zu genial aber auch schon sehr alt und nicht mehr all zu sehr bekannt.
-Ich würde sie jedem angehenden IT'ler wärmstens ans Herz legen.
+Well.
+A former instructor of mine pointed those stories out to me.
+So I have read some of them and I have to say there are some really great pieces among them.
+Unfortunately they are heavily dated and also no longer well known but I would recommend them to every IT staff member.
 
-## Was ist überhaupt BOfH?
+## What is BOfH?
 
-BOfH kurz für **B**astard **O**perator **f**rom **H**ell sind Geschichten über einen IT-Operator (ja, ein sehr alter Begriff) und seinen tagtäglichen Problemen, welche vom neuseeländische Autor Simon Travaglia stammen.
-Er selbst ist die Hauptfigur seiner zumindest teilweise finktionalen Geschichten.
-Was als kleine Geschichten in Newsgruppen anfing, wurde dann zu mehreren Büchern.
-Obwohl es Stupidedia ist erklärt dieser [Artikel][stup] ziemlich gut, worum es in den Geschichten geht.
-Weitere interessante Links:
-[Des Bastards eigene Seite][bofh] und seine neueren [Artikel][register].
+BOfH stands for **B**astard **O**perator **f**rom **H**ell.
+Those are a series of stories of an IT operator (yes, a very old term) and his daily struggles.
+They are written by New Zealand author Simon Travaglia.
+He himself is the main character of his at least party fictional stories.
+It started as a series of small tales in newsgroups but has been collected and put out as books.
+This German [article][stup] from the mock wikipedia Stupidedia explains pretty well what those stories are about.
+Further interesting links:
+[The site of the bastard][bofh] and his more current [articles][register].
 
 [stup]: http://www.stupidedia.org/stupi/Bastard_Operator_from_Hell
 [bofh]: http://bofh.ntk.net/BOFH/
 [register]: http://www.theregister.co.uk/odds/bofh/
 
-## Freunde und Bekannte
+## Friends and acquaintances
 
 - [justus.science][justus]
 - [felixdoering.com][felix]
@@ -82,7 +90,7 @@ Weitere interessante Links:
 
 [justus]: https://justus.science
 [felix]: https://felixdoering.com
-[unbedenklichkeitserklaerung]: https://felixwittwer.de
+[unbedenklichkeitserklaerung]: https://dummyco.de/
 [kilian]: https://kilian.io
 [vincent]: https://v1ncnet.de
 [kristian]: https://krissky.de

@@ -2,55 +2,54 @@
 namespace: update-net-future
 permalink: /blog/update-netz-zukunft
 permalink_en: /blog/update-net-future
-languages: ["de"]
 last_modified_at: 2015-12-28T00:00:00.00+01:00
 category: blog
 tags: administration encryption website
 ---
 
-# [UPDATE] Netz der Zukunft
+# [UPDATE] Net of the future
 
-Könnt ihr euch noch an meinen Blog Eintrag zum [Netz der Zukunft][net-future] erinnern?
+Can you remember my blog post to the [net of the future][net-future]?
 
-[net-future]: /blog/netz-zukunft
+[net-future]: /en/blog/net-future
 
-## Ich gehöre zu den Auserwählten
+## I am one of the chosen ones
 
-Gestern abend bekam ich eine E-Mail, dass ich in die Closed Beta von letsencrypt eingeladen wurde.
-Weihnachten kommt dieses Jahr früh.
-Wie ihr sehen könnt, ist meine Website jetzt nur noch verschlüsselt zu erreichen.
-Ich bin im Netz der Zukunft angekommen.
-Ich kann euch nun die Integrität und Sicherheit meines Inhalts zusichern, oder so.
+Yesterday evening I recieved an email that i have been invited to the closed beta of letsencrypt.
+Christmas came early this year.
+As you can see my site is now only accessible encrypted.
+I arrived in the net of the future.
+I can now assure you of the integrity and security of my content or something along those lines.
 
-Ich habe mich mit [kepler.international][kepler] und mit [git.kepler.international][git] beworben.
-Somit sind erstmal nur diese beiden Domains durch ein Zertifikat gesichert.
-Ich hoffe, dass ich zu einem späteren Zeitpunkt auch weitere Domains mit abdecken kann.
+I applied with [kepler.international][kepler] and [git.kepler.international][git].
+With that only those two domains are covered by a certificate.
+I hope that I can cover more domains later.
 
-[kepler]: https://kepler.international
+[kepler]: https://kepler.international/en/
 [git]: https://git.kepler.international
 
-## Genau zum richtigen Zeitpunkt
+## Exactly to the right time
 
-Ihr seht keine Warnmeldung aufgrund eines ungültigen Zertifikats mehr.
-Am 19.10.2015 wurde das Intermediate Zertifikat von letsencrypt durch IdenTrust quersigniert.
-Damit ist es in 99% aller Browser gültig.
+You do not see a warning message due to an invalid certificate.
+On the 19.10.2015 the intermediate certificate of letsencrypt has been cross signed by IdenTrust.
+With that it is valid in 99% of browsers.
 
-## Nachtrag 28.12.2015
+## Addendum 28.12.2015
 
-Die Zertifikate haben eine 90-Tage Gültigkeit.
-Als Serveradministrator ist man dazu angehalten aller 60 Tage das Zertifikat zu erneuern.
-Das habe ich heute getan und gleich alle weiteren aktiven Domains unter das Zertifikat gestellt.
-Es fehlt nur noch die Konfiguration, dass die Verbindung auf https hochgestuft wird.
+The certificates have a 90-day validity.
+It is suggested that you as a server administrator renew the certificates every 60 days.
+I did this today and extended the certificate to all my active domains.
+Only the configuration to upgrade the connection to https is missing now.
 
-Ihr fragt euch möglicherweise, warum man aller 90 Tage sein Zertifikat erneuern soll.
-Ich habe mich das auch gefragt aber die Erklärung von letsencrypt leuchtet ein.
-Damit schnell neue Domains zu einem Zertifikat hinzugefügt werden können, sollte das alte Zertifikat seine Gültigkeit verlieren.
-Da Certificate Revocation Lists noch keine richtige Verbreitung gefunden haben, muss man sich leider noch so eine Krücke schaffen.
-Das Argument, dass es zu aufwendig wäre, zieht nicht, da mit einem einfachen
+You maybe ask yourself why you should renew a certificate every 90 day.
+I did the same but the explenation from letsencrypt made sense.
+To quickly add new domains to a certificate the old certificate should lose its validity.
+Since Certificate Revocation Lists have not really spread you have to create such a crutch.
+The argument that it is to elaborate to do does now apply since with a simple:
 
 ```ShellSession
 >_ ./letsencrypt-auto
 …
 ```
 
-alles erledigt ist.
+everything is done.
