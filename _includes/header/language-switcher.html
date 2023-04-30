@@ -3,8 +3,8 @@
 	{% capture deutsch %}{% tl {{ page.namespace }} de | prepend: site.baseurl_root %}{% endcapture %}
 	{% capture english %}{% tl {{ page.namespace }} en | prepend: "/en" | prepend: site.baseurl_root %}{% endcapture %}
 {% else %}
-	{% assign deutsch = page.url | prepend: site.baseurl_root | remove: '/index.html' %}
-	{% assign english = page.url | prepend: "/en" | prepend: site.baseurl_root | remove: '/index.html' %}
+	{% assign deutsch = page.url | prepend: site.baseurl_root | remove: '/index.html' | remove: '.html' %}
+	{% assign english = page.url | prepend: "/en" | prepend: site.baseurl_root | remove: '/index.html' | remove: '.html' %}
 {% endif %}
 {% if deutsch == "" %}
 	{% assign deutsch = "/" %}
