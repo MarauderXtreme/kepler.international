@@ -2,7 +2,6 @@
 namespace: xray-music
 permalink: /blog/x-ray-musik
 permalink_en: /blog/x-ray-music
-languages: ["de"]
 category: blog
 tags: everyday-life video-games movies music software tv-series
 metatags:
