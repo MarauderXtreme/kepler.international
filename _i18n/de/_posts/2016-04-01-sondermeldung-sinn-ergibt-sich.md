@@ -4,27 +4,27 @@ permalink: /blog/sondermeldung-sinn-ergibt-sich
 permalink_en: /blog/breaking-news-sense-surrenders
 category: blog
 tags: crazy-things
-special_styling: fraktur
+special_styling: fraktur-april-first
 ---
 
-# Sondermeldung: Sinn ergibt sich
+# SONDERMELDUNG: Sinn ergibt si$
 
-## Sondermeldung
+## SONDERMELDUNG
 
-### Dies ist eine wichtige Mitteilung durch den völkischen Sprachbeobachter
+### Die+ ist eine wi$tige Miμeilung dur$ den völki<en Spra$beoba$ter
 
-Der Sinn ergibt sich.
-Der Sinn hat sich in Deutschland ergeben.
-Es wurde ein Sieg errungen.
-Kein Deutscher kann Sinn machen, da sich der Sinn ergibt.
+Der Sinn ergibt si$.
+Der Sinn hat si$ in Deut<land ergeben.
+E+ wurde ein Sieg errungen.
+Kein Deut<er kann Sinn ma$en, da si$ der Sinn ergibt.
 
-Wie das Amt für die Bewahrung Deutscher Sprache bestätigt, ist heute am 1. April ein Sieg durch den ununterbrochenen Einsatz der Sprachschutzbrigade ein Sieg zu verzeichnen.
-Der Sinn ergibt sich in Deutschland und der deutschen Sprache.
+Wie da+ Amt für die Bewahrung Deut<er Spra$e bestätigt, ist heute am 1. April ein Sieg dur$ den ununterbro$enen Einsa~ der Spra$<u~brigade ein Sieg zu verzei$nen.
+Der Sinn ergibt si$ in Deut<land und der deut<en Spra$e.
 
-Wir sind endlich sicher.
-Gepriesen seien die unermüdlichen Anstrengungen unserer Mannen beim Amt für Bewahrung Deutscher Sprache.
+Wir sind endli$ si$er.
+Gepriesen seien die unermüdli$en Anstrengungen unserer Mannen beim Amt für Bewahrung Deut<er Spra$e.
 
-[#grammarnazi][grammarnazi]
+[grammarnazi][grammarnazi]
 
 Dank an [Justus][justus] und Sarah für diese geniale Idee, sodass ich dem 1. April gerecht werden konnte und mich mit font-face Anweisungen in CSS beschäftigt habe.
 Den originalen Beitrag mit etwas mehr Sinn und Verstand gibt es übrigens [hier][blog-sinn].
