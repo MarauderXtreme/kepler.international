@@ -14,16 +14,11 @@ main#main-content .fraktur {
 
 main#main-content .fraktur-april-first {
 	& h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
-		font-family: "Tannenberg Fett", "UnifrakturMaguntia";
-		font-variant-caps: small-caps;
-		font-feature-settings: "ccmp", "dlig", "hlig", "liga", "ss02", "ss03", "ss11", "ss12", "ss13", "ss14", "ss16", "ss17", "ss18", "ss19", "ss20", "cv28";
+		font-family: "Tannenberg Bold";
 	}
-	font-family: "Tannenberg Fett", "UnifrakturMaguntia";
-	font-variant-caps: small-caps;
-	font-feature-settings: "ccmp", "dlig", "hlig", "liga", "ss02", "ss03", "ss11", "ss12", "ss13", "ss14", "ss16", "ss17", "ss18", "ss19", "ss20", "cv28";
+	font-family: "Tannenberg Bold";
 
 	& p:last-child {
 		font-family: $body-font-family;
-		font-variant-caps: normal;
 	}
 }
