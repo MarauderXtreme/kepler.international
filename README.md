@@ -28,6 +28,10 @@ Some of those magic tools are:
   - [FiraGO](https://github.com/bBoxType/FiraGO)
   - [FiraCode](https://github.com/tonsky/FiraCode)
   - [Unifraktur Maguntia](http://unifraktur.sourceforge.net/de/maguntia.html)
+  - [Tannenberg Fett](https://www.1001fonts.com/tannenberg-font.html)
+    - > […] I am giving out my fonts to everyone for free for commercial purposes without any restrictions and I hope you enjoy in these fonts as much as I and many other font-friends around the world do!  
+    ⇒ [Dieter Steffmann](https://www.1001fonts.com/users/steffmann/)
+    - [Dieter Steffmann All Fonts](http://www.steffmann.de/wordpress/test-2/typoasis/)
 
 This is as good as a rebuilt of my old Drupal website.
 Obviously some of the dynamic features and other things requiring a backend with a database are missing.
