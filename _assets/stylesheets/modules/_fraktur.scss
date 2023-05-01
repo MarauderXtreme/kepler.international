@@ -12,11 +12,22 @@ main#main-content .fraktur {
 	}
 }
 
+main#main-content .fraktur-with-replacement-ligatures {
+	& h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
+		font-family: "DS Tannenberg Fett orig";
+	}
+	font-family: "DS Tannenberg Fett orig";
+
+	& p:last-child {
+		font-family: $body-font-family;
+	}
+}
+
 main#main-content .fraktur-april-first {
 	& h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6{
-		font-family: "Tannenberg Bold";
+		font-family: "DS Tannenberg Fett";
 	}
-	font-family: "Tannenberg Bold";
+	font-family: "DS Tannenberg Fett";
 
 	& p:last-child {
 		font-family: $body-font-family;

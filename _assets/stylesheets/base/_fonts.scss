@@ -227,15 +227,19 @@
 }
 
 @font-face {
-	font-family: 'Tannenberg Bold';
+	font-family: 'DS Tannenberg Fett orig';
 	font-style: normal;
 	font-display: swap;
-	font-weight: 700;
-	src:	asset_url('Tannenberg/Tannenberg-Bold.eot');
-	src:	asset_url('Tannenberg/Tannenberg-Bold.eot?#iefix') format('embedded-opentype'),
-				asset_url('Tannenberg/Tannenberg-Bold.woff2') format('woff2'),
-				asset_url('Tannenberg/Tannenberg-Bold.woff') format('woff'),
-				asset_url('Tannenberg/Tannenberg-Bold.ttf') format('truetype'),
-				asset_url('Tannenberg/Tannenberg-Bold.otf') format('opentype'),
-				asset_url('Tannenberg/Tannenberg-Bold.svg#svgFont') format('svg');
+	font-weight: 400;
+	src:	asset_url('DSTannenberg/DS-Tannenberg-Fett.ttf') format('truetype'),
+				asset_url('DSTannenberg/DS-Tannenberg-Fett.otf') format('opentype');
+}
+
+@font-face {
+	font-family: 'DS Tannenberg Fett';
+	font-style: normal;
+	font-display: swap;
+	font-weight: 400;
+	src:	asset_url('DSTannenberg/DSTannenbergFett.ttf') format('truetype'),
+				asset_url('DSTannenberg/DSTannenbergFett.otf') format('opentype');
 }
