@@ -92,8 +92,6 @@ assets:
     - _assets
     - _assets/pictures
     - _assets/images
-    - _assets/javascript
-    - _assets/stylesheets
     - node_modules/jquery/dist
     - node_modules/what-input/dist
     - node_modules/foundation-sites/dist/js/plugins
