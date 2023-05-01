@@ -1,4 +1,3 @@
-// require modernizr.min.js
 //= require jquery/dist/jquery.min.js
 //= require what-input/dist/what-input.min.js
 //= require foundation-sites/dist/js/plugins/foundation.core.min.js
@@ -14,4 +13,3 @@
 //= require foundation-sites/dist/js/plugins/foundation.accordionMenu.min.js
 //= require foundation-sites/dist/js/plugins/foundation.responsiveMenu.min.js
 //= require foundation-sites/dist/js/plugins/foundation.responsiveToggle.min.js
-// require foundation-sites/dist/js/plugins/foundation.min.js
