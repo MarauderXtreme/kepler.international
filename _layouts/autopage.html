@@ -4,10 +4,10 @@ layout: page
 
 <!-- Begin layout/autopage -->
 {% for post in paginator.posts %}
-<article class="small callout">
+<article class="small callout{% if post.special_styling %} {{ post.special_styling }}{% endif %}">
 	<header>
 		<h2>
-			<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | replace: 'ſ', 's' }}</a>
+			<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
 		</h2>
 		{% include post-meta-information.html %}
 	</header>
@@ -16,7 +16,7 @@ layout: page
 	{% else %}
 		{% assign desc = post.excerpt %}
 	{% endif %}
-	<section{% if post.special_styling %} class="{{ post.special_styling }}"{% endif %}>
+	<section>
 		{{ desc | replace: '<h5', '<h6' | replace: '</h5>', '</h6>' | replace: '<h4', '<h5' | replace: '</h4>', '</h5>' | replace: '<h3', '<h4' | replace: '</h3>', '</h4>' | replace: '<h2', '<h3' | replace: '</h2>', '</h3>' | truncate: site.teaser-length, '…' }}
 		<p class="read-more">
 			<a href="{{ post.url | relative_url }}">{% t global.more %}</a>
