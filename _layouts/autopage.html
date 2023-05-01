@@ -7,7 +7,7 @@ layout: page
 <article class="small callout">
 	<header>
 		<h2>
-			<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+			<a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | replace: 'ſ', 's' }}</a>
 		</h2>
 		{% include post-meta-information.html %}
 	</header>
