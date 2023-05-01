@@ -92,14 +92,9 @@ assets:
     - _assets
     - _assets/pictures
     - _assets/images
-    - node_modules/jquery/dist
-    - node_modules/what-input/dist
-    - node_modules/foundation-sites/dist/js/plugins
+    - node_modules/@fontsource
+    - node_modules
     - node_modules/foundation-sites/scss
-    - node_modules/foundation-sites/_vendor
-    - node_modules/firacode/distr
-    - node_modules/@fontsource/firago
-    - node_modules/@fontsource/unifrakturmaguntia
   plugins:
     css: { autoprefixer: {}}
     img:
