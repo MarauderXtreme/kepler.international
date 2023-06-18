@@ -13,14 +13,14 @@ tags: mobile drupal website development
 I succeeded to switch my website to a mobile layout.
 At first this should have happened roughly half a year ago but my IHK exams prevented it.
 After another semester I had enough spare time in my holidays and now it should happen.
-Google noticed me last spring that my website was badly optimized for mobile devices.
+Google notified me last spring that my website was badly optimized for mobile devices.
 Because I care about the ranking by google and I did not like the old layout anymore the refresh of my website commenced.
 Of course the bitching of Google was not the only thing because I had planned a mobile layout for a long time.
 
 ## Playground Foundation
 
 I still can not understand why we had set up special subdomains, installed mobile detect libraries and completely depended on jQuery UI only to server a mobile website for smartphones.
-Why there were not good frameworks earlier for developing mobile layouts out of the box?
+Why were there no good frameworks earlier for developing mobile layouts out of the box?
 Meanwhile there are potent frameworks that will do all the work and are straight forward in their development process.
 I know two examples a bit better and of course I choose one for myself.
 On one hand the is Bootstrap that is developed and maintained by Twitter.

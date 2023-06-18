@@ -4,14 +4,19 @@ State as of: {% include date-translator.html date = "2022-02-18T00:00:00.00+01:0
 
 ## Table of contents
 
-- [Person Responsible][person-responsible]
-- [Overview of processing][overview]
-- [Relevant legal basis][basis]
-- [Security measures][security]
-- [Provision of the online offer and web hosting][hosting]
-- [Blogs and publication media][blog]
-- [Amendment and updating of the privacy policy][update]
-- [Definitions of terms][glossary]
+- [Privacy Policy](#privacy-policy)
+  - [Table of contents](#table-of-contents)
+  - [Person Responsible](#person-responsible)
+  - [Overview of processing](#overview-of-processing)
+    - [Types of data processed](#types-of-data-processed)
+    - [Categories of data subjects](#categories-of-data-subjects)
+    - [Purposes of processing](#purposes-of-processing)
+    - [Relevant legal basis](#relevant-legal-basis)
+  - [Security measures](#security-measures)
+  - [Provision of the online offer and web hosting](#provision-of-the-online-offer-and-web-hosting)
+  - [Blogs and publication media](#blogs-and-publication-media)
+  - [Amendment and update of the privacy policy](#amendment-and-update-of-the-privacy-policy)
+  - [Definitions of terms](#definitions-of-terms)
 
 [person-responsible]: #person-responsible
 [overview]: #overview-of-processing
@@ -28,7 +33,7 @@ Christoph Kepler
 Fritz-Hoffmann-Straße 2  
 01097 Dresden
 
-email-address: impressum@kepler.international[mailto:impressum@kepler.international]
+email-address: [impressum@kepler.international](mailto:impressum@kepler.international)
 
 ## Overview of processing
 

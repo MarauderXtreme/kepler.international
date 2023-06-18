@@ -1,6 +1,6 @@
 # BOfH
 
-My name is CHristoph Kepler.
+My name is Christoph Kepler.
 
 I am in charge of this site.
 It serves me as a container for my sporadic thoughts, storage for things I reuse from time to time and explanations of said things if someone finds them useful too.

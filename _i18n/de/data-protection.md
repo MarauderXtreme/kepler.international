@@ -4,14 +4,19 @@ Stand: {% include date-translator.html date = "2022-02-18T00:00:00.00+01:00" %}
 
 ## Inhaltsübersicht
 
-- [Verantwortlicher][verantwortlicher]
-- [Übersicht der Verarbeitungen][uebersicht]
-- [Maßgebliche Rechtsgrundlagen][grundlagen]
-- [Sicherheitsmaßnahmen][sicherheit]
-- [Bereitstellung des Onlineangebotes und Webhosting][hosting]
-- [Blogs und Publikationsmedien][blog]
-- [Änderung und Aktualisierung der Datenschutzerklärung][aktualisierung]
-- [Begriffsdefinitionen][definitionen]
+- [Datenschutzerklärung](#datenschutzerklärung)
+  - [Inhaltsübersicht](#inhaltsübersicht)
+  - [Verantwortlicher](#verantwortlicher)
+  - [Übersicht der Verarbeitungen](#übersicht-der-verarbeitungen)
+    - [Arten der verarbeiteten Daten](#arten-der-verarbeiteten-daten)
+    - [Kategorien betroffener Personen](#kategorien-betroffener-personen)
+    - [Zwecke der Verarbeitung](#zwecke-der-verarbeitung)
+    - [Maßgebliche Rechtsgrundlagen](#maßgebliche-rechtsgrundlagen)
+  - [Sicherheitsmaßnahmen](#sicherheitsmaßnahmen)
+  - [Bereitstellung des Onlineangebotes und Webhosting](#bereitstellung-des-onlineangebotes-und-webhosting)
+  - [Blogs und Publikationsmedien](#blogs-und-publikationsmedien)
+  - [Änderung und Aktualisierung der Datenschutzerklärung](#änderung-und-aktualisierung-der-datenschutzerklärung)
+  - [Begriffsdefinitionen](#begriffsdefinitionen)
 
 [verantwortlicher]: #verantwortlicher
 [uebersicht]: #übersicht-der-verarbeitungen
@@ -28,7 +33,7 @@ Christoph Kepler
 Fritz-Hoffmann-Straße 2  
 01097 Dresden
 
-E-Mail-Adresse: [impressum@kepler.international][mailto:impressum@kepler.international]
+E-Mail-Adresse: [impressum@kepler.international](mailto:impressum@kepler.international)
 
 ## Übersicht der Verarbeitungen
 
