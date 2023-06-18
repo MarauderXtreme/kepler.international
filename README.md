@@ -32,6 +32,7 @@ Some of those magic tools are:
     - > […] I am giving out my fonts to everyone for free for commercial purposes without any restrictions and I hope you enjoy in these fonts as much as I and many other font-friends around the world do!  
     ⇒ [Dieter Steffmann](https://www.1001fonts.com/users/steffmann/)
     - [Dieter Steffmann All Fonts](http://www.steffmann.de/wordpress/test-2/typoasis/)
+    - [Peter Wiegel added ligatures](https://www.peter-wiegel.de/TannenbergFett.html)
 
 This is as good as a rebuilt of my old Drupal website.
 Obviously some of the dynamic features and other things requiring a backend with a database are missing.
